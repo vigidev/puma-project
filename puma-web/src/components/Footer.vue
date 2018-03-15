@@ -1,0 +1,62 @@
+<template>
+  <div id="f">
+      <b-container fluid>
+          <b-row>
+              <b-col>
+                  <img src="https://iqyoe.github.io/puma-web/assets/img/horizontal-logo-comp-lengkap-white.png" alt="Logo Computing" style="max-width:20em;">
+                  <h4>Address</h4>
+                  <p>President University Campus <br> Jl. Ki Hajar Dewantara, Kota Jababeka, <br> Cikarang Baru, Bekasi 17550 - Indonesia</p>
+              </b-col>
+              <b-col>
+                  <h4>Contact Us</h4>
+                  <p style="font-weight:bold;">Email</p>
+                  <p>puma.computing@president.ac.id</p>
+              </b-col>
+              <b-col>
+                  <h4>Information</h4>
+                  <h4>Maps</h4>
+                   <gmap-map
+                        :center="center"
+                        :zoom="15"
+                        style="height: 25vh"
+                    >
+                        <gmap-marker
+                        :key="index"
+                        v-for="(m, index) in markers"
+                        :position="m.position"
+                        :clickable="true"
+                        :draggable="true"
+                        @click="center=m.position"
+                        ></gmap-marker>
+                    </gmap-map>
+              </b-col>
+          </b-row>
+      </b-container>
+  </div>
+</template>
+
+<script>
+export default {
+  data () {
+    return {
+      center: {lat: -6.2849417, lng: 107.1705597},
+      markers: [{
+        position: {lat: -6.2849417, lng: 107.1705597}
+      }]
+    }
+  }
+}
+</script>
+
+<style scoped>
+#f{
+    background: #000411;
+    height: 50vh;
+    margin-top: 3em;
+    color: #fff;
+}
+h4{
+    font-weight: bold;
+    margin-top: 1em;
+}
+</style>
