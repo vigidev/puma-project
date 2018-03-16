@@ -1,5 +1,10 @@
 <template>
   <div id="car">
+    <div id="headline">
+      <img src="https://iqyoe.github.io/puma-web/assets/img/horizontal-logo-comp-lengkap-hitam.png" alt="" style="margin: 3em 0; height:30vh;z-index:999;">
+    
+    </div>
+
     <b-carousel id="carousel1"
                 style=""
                 controls
