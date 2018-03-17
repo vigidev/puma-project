@@ -22,17 +22,22 @@
 
 <script>
 export default {
+  data () {
+    return {
+    }
+  },
+  name: 'Academic'
 }
 </script>
 
 <style scoped>
-h2{
-    margin: auto;
-    margin-bottom: 1em;
-    font-size: 2.5em;
-    padding-bottom: .2em;
-    font-weight: bold;
-    border-bottom: solid 5px #000;
-    text-transform: uppercase;
-}
+    h2 {
+        margin: auto;
+        margin-bottom: 1em;
+        font-size: 2.5em;
+        padding-bottom: .2em;
+        font-weight: bold;
+        border-bottom: solid 5px #000;
+        text-transform: uppercase;
+    }
 </style>

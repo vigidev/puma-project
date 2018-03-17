@@ -90,7 +90,8 @@ export default {
           break
       }
     }
-  }
+  },
+  name: 'Event'
 }
 </script>
 

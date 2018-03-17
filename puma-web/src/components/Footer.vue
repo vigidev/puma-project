@@ -1,6 +1,6 @@
 <template>
   <div id="f">
-      <b-container fluid>
+      <b-container>
           <b-row>
               <b-col>
                   <img src="https://iqyoe.github.io/puma-web/assets/img/horizontal-logo-comp-lengkap-white.png" alt="Logo Computing" style="max-width:20em;">
@@ -49,14 +49,14 @@ export default {
 </script>
 
 <style scoped>
-#f{
-    background: #000411;
-    height: 50vh;
-    margin-top: 3em;
-    color: #fff;
-}
-h4{
-    font-weight: bold;
-    margin-top: 1em;
-}
+    #f {
+        background: #000411;
+        height: 50vh;
+        margin-top: 3em;
+        color: #fff;
+    }
+    h4 {
+        font-weight: bold;
+        margin-top: 1em;
+    }
 </style>

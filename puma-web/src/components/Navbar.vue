@@ -1,16 +1,24 @@
 <template>
-  <b-navbar toggleable="md" type="dark" variant="dark" fixed="top">
+<div id="navbar">
+  <b-navbar class="navbar-dark" toggleable="md" type="dark" variant="dark" fixed="top">
 
     <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
 
     <b-collapse is-nav id="nav_collapse">
 
         <!-- Right aligned nav items -->
-        <b-navbar-nav class="ml-auto">
-            <b-nav-item><router-link :to="'/'">Home</router-link></b-nav-item>
-            <b-nav-item><router-link :to="'/Evac'">Event</router-link></b-nav-item>
-            <b-nav-item><router-link :to="'/Academic'">Academic</router-link></b-nav-item>
-            <b-nav-item href="#">About</b-nav-item>
+        <b-container>
+        <b-row align-h="between">
+        <b-col>
+          <b-navbar-brand style="padding: 0 auto;margin: 0 auto">
+            <b-img src="http://puma-web.oo/assets/img/horizontal-logo-comp-white.png" height="30" class="d-inline-block align-top" alt="PUMA Computing" />
+          </b-navbar-brand>
+        </b-col>
+        <b-navbar-nav>
+            <li class="nav-item"><router-link :to="'/'" class="nav-link" exact>Home</router-link></li>
+            <li class="nav-item"><router-link :to="'/event'" class="nav-link">Event</router-link></li>
+            <li class="nav-item"><router-link :to="'/academic'" class="nav-link">Academic</router-link></li>
+            <li class="nav-item"><router-link :to="'/about'" class="nav-link">About</router-link></li>
             <b-nav-item-dropdown text="Login"   >
                 <div id="navLogin">
                 <b-nav-form>
@@ -25,18 +33,39 @@
                 </div>
             </b-nav-item-dropdown>
         </b-navbar-nav>
+        </b-row>
+        </b-container>
 
     </b-collapse>
     </b-navbar>
+    <b-navbar>
+        <b-navbar-nav>
+            <b-nav-item>No</b-nav-item>
+        </b-navbar-nav>
+    </b-navbar>
+    <b-navbar type="light" variant="light" sticky>
+        <b-container>
+          <b-row>
+            <img src="https://iqyoe.github.io/puma-web/assets/img/horizontal-logo-comp-lengkap-hitam.png" alt="Header" style="height:15vh;z-index:999;">
+          </b-row>
+        </b-container>
+    </b-navbar>
+</div>
 </template>
 
 <script>
+
 export default {
+  data () {
+    return {
+    }
+  }
 }
 </script>
 
 <style>
-.navbar{
+.navbar-dark{
     background: #000411 !important;
+    box-shadow: 0 1px 1px #ccc;
 }
 </style>

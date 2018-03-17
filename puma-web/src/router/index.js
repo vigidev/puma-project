@@ -1,26 +1,36 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/Home'
-import Evac from '@/components/EvAc'
+import Event from '@/components/Event'
 import Acad from '@/components/Academic'
+import About from '@/components/About'
+
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
       path: '/',
-      name: 'index',
+      name: 'Home',
       component: Home
     },
     {
-      path: '/Evac',
+      path: '/event',
       name: 'Event',
-      component: Evac
+      component: Event
     },
     {
-      path: '/Academic',
+      path: '/academic',
       name: 'Academic',
       component: Acad
+    },
+    {
+      path: '/about',
+      name: 'About',
+      component: About
     }
-  ]
+  ],
+  mode: 'history', // https://router.vuejs.org/en/essentials/history-mode.html
+  linkActiveClass: 'active',
+  linkExactActiveClass: 'active'
 })
