@@ -11,13 +11,10 @@
                   <h4>Contact Us</h4>
                   <p style="font-weight:bold;">Email</p>
                   <p>puma.computing@president.ac.id</p>
-              </b-col>
-              <b-col>
-                  <h4>Information</h4>
                   <h4>Maps</h4>
                    <gmap-map
                         :center="center"
-                        :zoom="15"
+                        :zoom="17"
                         style="height: 25vh"
                     >
                         <gmap-marker
@@ -29,6 +26,17 @@
                         @click="center=m.position"
                         ></gmap-marker>
                     </gmap-map>
+              </b-col>
+              <b-col>
+                  <h4>Information</h4>
+                  <ul>
+                    <li class=""><router-link :to="'/'" class="" exact>Home</router-link></li>
+                    <li class=""><router-link :to="'/event'" class="">Event</router-link></li>
+                    <li class=""><router-link :to="'/academic'" class="">Academic</router-link></li>
+                    <li class=""><router-link :to="'/about'" class="">About</router-link></li>
+                    <li class=""><router-link :to="'/about'" class="">Computizen</router-link></li>
+                    <li class=""><router-link :to="'/about'" class="">Contact Us</router-link></li>
+                  </ul>
               </b-col>
           </b-row>
       </b-container>
@@ -51,12 +59,15 @@ export default {
 <style scoped>
     #f {
         background: #000411;
-        height: 50vh;
         margin-top: 3em;
         color: #fff;
     }
     h4 {
         font-weight: bold;
         margin-top: 1em;
+    }
+    li{
+        list-style: none;
+        margin: 0;
     }
 </style>

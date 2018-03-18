@@ -1,14 +1,23 @@
 <template>
-  <b-container style="margin-top:4em;">
+  <b-container>
+          <b-breadcrumb :items="breads"/>
       <b-row>
           <b-col>
               <b-card title="IT Information">
-                  
+                  <b-list-group>
+                      <b-list-group-item><a href="/">Downloadable Item</a></b-list-group-item>
+                      <b-list-group-item><a href="/">Downloadable Item</a></b-list-group-item>
+                      <b-list-group-item><a href="/">Downloadable Item</a></b-list-group-item>
+                  </b-list-group>
               </b-card>
           </b-col>
           <b-col>
               <b-card title="IS Information">
-                  
+                  <b-list-group>
+                      <b-list-group-item><a href="/">Downloadable Item</a></b-list-group-item>
+                      <b-list-group-item><a href="/">Downloadable Item</a></b-list-group-item>
+                      <b-list-group-item><a href="/">Downloadable Item</a></b-list-group-item>
+                  </b-list-group>
               </b-card>
           </b-col>
       </b-row>
@@ -24,6 +33,16 @@
 export default {
   data () {
     return {
+      breads:
+      [
+        {
+          text: 'Home',
+          to: {name: 'Home'}
+        },
+        {
+          text: 'Academic'
+        }
+      ]
     }
   },
   name: 'Academic'

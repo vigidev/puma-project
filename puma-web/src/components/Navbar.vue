@@ -11,7 +11,7 @@
         <b-row align-h="between">
         <b-col>
           <b-navbar-brand style="padding: 0 auto;margin: 0 auto">
-            <b-img src="http://puma-web.oo/assets/img/horizontal-logo-comp-white.png" height="30" class="d-inline-block align-top" alt="PUMA Computing" />
+            <b-img src="https://iqyoe.github.io/puma-web/assets/img/horizontal-logo-comp-white.png" height="30" class="d-inline-block align-top" alt="PUMA Computing" />
           </b-navbar-brand>
         </b-col>
         <b-navbar-nav>
@@ -19,19 +19,8 @@
             <li class="nav-item"><router-link :to="'/event'" class="nav-link">Event</router-link></li>
             <li class="nav-item"><router-link :to="'/academic'" class="nav-link">Academic</router-link></li>
             <li class="nav-item"><router-link :to="'/about'" class="nav-link">About</router-link></li>
-            <b-nav-item-dropdown text="Login"   >
-                <div id="navLogin">
-                <b-nav-form>
-                    <b-form-input
-                    type="text"
-                    placeholder="Username"></b-form-input>
-                    <b-form-input
-                    type="Password"
-                    placeholder="Password"></b-form-input>
-                    <b-button variant="primary">Login</b-button>
-                </b-nav-form>                    
-                </div>
-            </b-nav-item-dropdown>
+            <li class="nav-item"><router-link :to="'/'" class="nav-link">Computizen</router-link></li>
+            <li class="nav-item"><router-link :to="'/'" class="nav-link">Contact Us</router-link></li>
         </b-navbar-nav>
         </b-row>
         </b-container>

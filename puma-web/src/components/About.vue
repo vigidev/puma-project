@@ -23,7 +23,7 @@
           <b-row align-h="center">
             <b-card-group deck class="mb-3">
                 <b-card title="Rila Mandala, Ph.D"
-                        img-src="http://puma-web.oo/assets/img/rila.png"
+                        img-src="https://iqyoe.github.io/puma-web/assets/img/rila.png"
                         img-alt="Rila Mandala, Ph.D"
                         img-top
                         tag="dean"

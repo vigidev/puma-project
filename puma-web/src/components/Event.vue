@@ -1,30 +1,46 @@
 <template>
   <b-container fluid>
-      <div id="Event" :style="eventStyle">
-          <b-container>
-            <h2>Events</h2>
-          <b-row v-for="ev of evs" :key="ev.id" v-if="ev.id<=2">
-              <b-card :title="ev.t"
-                      style="max-width:30vw;"
-              >
-                  <p>{{ev.d}}</p>
-                  <a v-on:click="changeEventBg(ev.id)"><b-btn variant="primary">Test</b-btn></a>
-              </b-card>
-          </b-row>
-          </b-container>
+    <b-container style="margin-top:1%;">
+      <b-breadcrumb :items="breads"/>
+    </b-container>
+      <div id="Event">
+        <b-row>
+          <h2>Events</h2>
+        </b-row>
+        <b-row>
+          <b-col v-for="ev of evs" 
+                 :key="ev.id">
+            <b-card :img-src="ev.bg"
+                    :img-alt="ev.t"
+                    :title="ev.t"
+                    style="width:30vw;"
+            >
+            <p class="card-text">
+              {{ev.d}}
+            </p>
+            </b-card>
+          </b-col>
+        </b-row>
       </div>
-      <div id="Aktivitas" :style="activityStyle">
-           <b-container>
-            <h2>Events</h2>
-          <b-row v-for="ev of evs" :key="ev.id" v-if="ev.id<=2">
-              <b-card :title="ev.t"
-                      style="max-width:30vw;"
-              >
-                  <p>{{ev.d}}</p>
-                  <a v-on:click="changeActivityBg(ev.id)"><b-btn variant="primary">Test</b-btn></a>
-              </b-card>
-          </b-row>
-          </b-container>
+
+      <div id="Aktivitas">
+        <b-row>
+          <h2>Activity</h2>
+        </b-row>
+        <b-row>
+          <b-col v-for="ev of evs" 
+                 :key="ev.id">
+            <b-card :img-src="ev.bg"
+                    :img-alt="ev.t"
+                    :title="ev.t"
+                    style="width:30vw;"
+            >
+            <p class="card-text">
+              {{ev.d}}
+            </p>
+            </b-card>
+          </b-col>
+        </b-row>
       </div>
   </b-container>
 </template>
@@ -33,6 +49,16 @@
 export default {
   data () {
     return {
+      breads:
+      [
+        {
+          text: 'Home',
+          to: {name: 'Home'}
+        },
+        {
+          text: 'Event'
+        }
+      ],
       eventStyle: {
         background: 'url("https://iqyoe.github.io/puma-web/assets/img/carousel-content-1.png")',
         padding: '.5em'
@@ -70,26 +96,6 @@ export default {
     }
   },
   methods: {
-    changeEventBg: function (num) {
-      switch (num % 2) {
-        case 0:
-          this.eventStyle.background = 'url("https://iqyoe.github.io/puma-web/assets/img/carousel-content-1.png")'
-          break
-        case 1:
-          this.eventStyle.background = 'url("https://iqyoe.github.io/puma-web/assets/img/carousel-content-2.png")'
-          break
-      }
-    },
-    changeActivityBg: function (num) {
-      switch (num % 2) {
-        case 0:
-          this.activityStyle.background = 'url("https://iqyoe.github.io/puma-web/assets/img/carousel-content-1.png")'
-          break
-        case 1:
-          this.activityStyle.background = 'url("https://iqyoe.github.io/puma-web/assets/img/carousel-content-2.png")'
-          break
-      }
-    }
   },
   name: 'Event'
 }
@@ -97,13 +103,16 @@ export default {
 
 <style scoped>
 h2{
+    margin: auto;
     margin-bottom: 1em;
-    color: #fff;
     font-size: 2.5em;
     padding-bottom: .2em;
     font-weight: bold;
-    border-bottom: solid 5px #fff;
+    border-bottom: solid 5px;
     text-transform: uppercase;
+}
+.card{
+  margin-bottom: 1em;
 }
 #Event{
     margin-top: 3em;
