@@ -100,7 +100,7 @@
                   img-src="https://iqyoe.github.io/puma-web/assets/img/news2.jpg"
                   img-alt="Image"
           >
-            <p class="card-text">
+            <p class="card-text" style="color:#fff">
               Events and Activities
             </p>          
           </b-card>
@@ -110,7 +110,7 @@
                   img-src="https://iqyoe.github.io/puma-web/assets/img/news2.jpg"
                   img-alt="Image"
           >
-            <p class="card-text">
+            <p class="card-text" style="color:#fff">
               Academics
             </p>          
           </b-card>
@@ -121,7 +121,7 @@
                   img-alt="Image"
                   style=""
           >
-            <p class="card-text">
+            <p class="card-text" style="color:#fff;">
               Events and Activities
             </p>          
           </b-card>

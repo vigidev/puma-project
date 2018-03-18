@@ -64,6 +64,46 @@
           </b-row>
         </b-col>
       </b-row>
+      <b-row>
+        <h3>PUMA Computing Team</h3>
+      </b-row>
+      <b-row>
+        <b-card>
+          <b-row>
+            <b-col>
+              <img src="https://iqyoe.github.io/puma-web/assets/img/carousel-content-1.png" alt="" srcset="" style="height:50vh;">
+            </b-col>
+            <b-col>
+              <b-list-group flush>
+                <b-list-group-item>
+                  <a href="http://" class="btn btn-primary" v-b-toggle.collapsebod>Board of Director</a>
+                  <b-collapse id="collapsebod" style="margin-top:1.5em;">
+                    <p>About BoD</p>
+                  </b-collapse>
+                </b-list-group-item>
+                <b-list-group-item>
+                  <a href="http://" class="btn btn-primary" v-b-toggle.collapsesa>Student Activity Division</a>
+                  <b-collapse id="collapsesa" style="margin-top:1.5em;">
+                    <p>About SA</p>
+                  </b-collapse>
+                </b-list-group-item>
+                <b-list-group-item>
+                  <a href="http://" class="btn btn-primary" v-b-toggle.collapsesd>Student Development Division</a>
+                  <b-collapse id="collapsesd" style="margin-top:1.5em;">
+                    <p>About SD</p>
+                  </b-collapse>
+                </b-list-group-item>
+                <b-list-group-item>
+                  <a href="http://" class="btn btn-primary" v-b-toggle.collapsecom>Communicaiton Division</a>
+                  <b-collapse id="collapsecom" style="margin-top:1.5em;">
+                    <p>About Communication</p>
+                  </b-collapse>
+                </b-list-group-item>
+              </b-list-group>
+            </b-col>
+          </b-row>
+        </b-card>
+      </b-row>
   </b-container>
   </div>
 </template>
