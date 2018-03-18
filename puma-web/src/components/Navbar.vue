@@ -11,7 +11,7 @@
         <b-row align-h="between">
         <b-col>
           <b-navbar-brand style="padding: 0 auto;margin: 0 auto">
-            <b-img src="https://iqyoe.github.io/puma-web/assets/img/horizontal-logo-comp-white.png" height="30" class="d-inline-block align-top" alt="PUMA Computing" />
+            <b-img src="static/horizontal-full-white.png" height="30" class="d-inline-block align-top" alt="PUMA Computing" />
           </b-navbar-brand>
         </b-col>
         <b-navbar-nav>
