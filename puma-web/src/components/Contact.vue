@@ -34,7 +34,7 @@
       </b-container>
       
           <b-container>
-              <b-row>
+              <b-row align-h="center">
                 <b-form @reset="onReset">
                     <b-form-group>
                         <b-form-row inline>
