@@ -10,7 +10,7 @@
         <b-container>
         <b-row align-h="between">
         <b-col>
-          <b-navbar-brand style="padding: 0 auto;margin: 0 auto">
+          <b-navbar-brand style="padding: 0 auto;margin: 0 auto" v-show="show">
             <b-img src="static/horizontal-full-white.png" height="30" class="d-inline-block align-top" alt="PUMA Computing" />
           </b-navbar-brand>
         </b-col>
@@ -50,7 +50,23 @@
 export default {
   data () {
     return {
+      show: false
     }
+  },
+  methods: {
+    handleScroll () {
+      if (window.scrollY > 100) {
+        this.show = true
+      } else {
+        this.show = false
+      }
+    }
+  },
+  created () {
+    window.addEventListener('scroll', this.handleScroll)
+  },
+  destroyed () {
+    window.removeEventListener('scroll', this.handleScroll)
   }
 }
 </script>

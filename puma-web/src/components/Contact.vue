@@ -5,7 +5,7 @@
     </b-container>
       <b-container>
           <b-row><h2>Contact Us !</h2></b-row>
-          <b-row>
+          <b-row class="mb-3">
               <b-col cols="4">
                   <h4>Address</h4>
                   <p>President University Campus <br> Jl. Ki Hajar Dewantara, Kota Jababeka, <br> Cikarang Baru, Bekasi 17550 - Indonesia</p>
