@@ -1,134 +1,153 @@
 <template>
-  <div id="car">
-
-    <b-carousel id="carousel1"
-                style=""
-                controls
-                indicators
-                background="#ababab"
-                :interval="3000"
-                img-width="1024"
-                img-height="480"
-                v-model="slide"
-                @sliding-start="onSlideStart"
-                @sliding-end="onSlideEnd"
-    >
-
-      <!-- Text slides with image -->
-      <b-carousel-slide caption="First"
-                        text="Lorem ipsum dolor sit amet, vim graeci delicatissimi in, usu ei percipitur delicatissimi, at everti insolens pri. Ut veniam conceptam."
-                        img-src="https://iqyoe.github.io/puma-web/assets/img/carousel-content-1.png"
-      ></b-carousel-slide>
-
-      <!-- Slides with custom text -->
-      <b-carousel-slide caption="Title"
-                        text="Lorem ipsum dolor sit amet, vim graeci delicatissimi in, usu ei percipitur delicatissimi, at everti insolens pri. Ut veniam conceptam."
-                        img-src="https://iqyoe.github.io/puma-web/assets/img/carousel-content-2.png"
-      ></b-carousel-slide>
-
-    </b-carousel>
-
-    <p class="mt-4">
-    </p>
-    
-    <b-container style="margin-top:3em;">
-        <b-row class="title">
-            <h2>NEWS RELEASE</h2>
-        </b-row>
-        <b-row>
-            <b-col v-for="item of items" :key="item.id" v-if="item.id>=ne && item.id<ne+4">
-                <b-card title="News"
-                        :img-src=item.src
-                        img-alt="Image"
-                        img-top
-                        tag="article"
-                        style="max-width: 30rem;"
-                        class="mb-2">
-                    <p class="card-text">
-                    {{item.pa}}
-                    </p>
-                    <b-button href="#" variant="primary">Read More</b-button>
-                </b-card>
-            </b-col>
-        </b-row>
-    </b-container>
-
-    <b-container style="margin-top:3em;">
-      <b-row>
-        <h2>Computing Events</h2>
-      </b-row>
-        <b-row>
-          <b-col>
-            <b-card overlay
-                    img-src="https://iqyoe.github.io/puma-web/assets/img/news2.jpg"
-                    img-alt="Image"
-            ></b-card>
-          </b-col>
-          <b-col>
-            <b-card overlay
-                    img-src="https://iqyoe.github.io/puma-web/assets/img/news2.jpg"
-                    img-alt="Image"
-            ></b-card>
-          </b-col>
-        </b-row>
-        <b-row>
-          <b-col>
-            <b-card overlay
-                    img-src="https://iqyoe.github.io/puma-web/assets/img/news2.jpg"
-                    img-alt="Image"
-            ></b-card>
-          </b-col>
-          <b-col>
-            <b-card overlay
-                    img-src="https://iqyoe.github.io/puma-web/assets/img/news2.jpg"
-                    img-alt="Image"
-            ></b-card>
-          </b-col>
-          <b-col>
-            <b-card overlay
-                    img-src="https://iqyoe.github.io/puma-web/assets/img/news2.jpg"
-                    img-alt="Image"
-            ></b-card>
-          </b-col>
-        </b-row>
-    </b-container>
-
-    <b-container style="margin-top:3em;">
-      <b-row>
-        <b-col>
-          <b-card overlay
-                  img-src="https://iqyoe.github.io/puma-web/assets/img/news2.jpg"
-                  img-alt="Image"
-          >
-            <p class="card-text" style="color:#fff">
-              Events and Activities
-            </p>          
-          </b-card>
-        </b-col>
-        <b-col>
-          <b-card overlay
-                  img-src="https://iqyoe.github.io/puma-web/assets/img/news2.jpg"
-                  img-alt="Image"
-          >
-            <p class="card-text" style="color:#fff">
-              Academics
-            </p>          
-          </b-card>
-        </b-col>
-        <b-col>
-          <b-card overlay
-                  img-src="https://iqyoe.github.io/puma-web/assets/img/news2.jpg"
-                  img-alt="Image"
+  <div>
+    <div id="about">
+      <div id="overlay">
+        <b-container>
+          <img src="https://iqyoe.github.io/puma-web/assets/img/horizontal-logo-comp-lengkap-white.png" alt="Logo-comp" style="height:50vh;">
+          <br><router-link :to="'/about'" class="btn btn-primary">About Us</router-link> <a href="#car" class="btn btn-success">News Updates</a>
+          <br><br><br>
+          <span class="scroll-btn">
+            <a href="#car">
+              <span class="mouse">
+                <span>
+                </span>
+              </span>
+            </a>
+            <p>scroll me</p>
+          </span>
+        </b-container>
+      </div>
+    </div>
+    <div id="car">   
+      <b-carousel id="carousel1"
                   style=""
-          >
-            <p class="card-text" style="color:#fff;">
-              Events and Activities
-            </p>          
-          </b-card>
-        </b-col>
-      </b-row>
-    </b-container>
-  </div>
+                  controls
+                  indicators
+                  background="#ababab"
+                  :interval="3000"
+                  img-width="1024"
+                  img-height="480"
+                  v-model="slide"
+                  @sliding-start="onSlideStart"
+                  @sliding-end="onSlideEnd"
+      >
+
+        <!-- Text slides with image -->
+        <b-carousel-slide caption="First"
+                          text="Lorem ipsum dolor sit amet, vim graeci delicatissimi in, usu ei percipitur delicatissimi, at everti insolens pri. Ut veniam conceptam."
+                          img-src="https://iqyoe.github.io/puma-web/assets/img/carousel-content-1.png"
+        ></b-carousel-slide>
+
+        <!-- Slides with custom text -->
+        <b-carousel-slide caption="Title"
+                          text="Lorem ipsum dolor sit amet, vim graeci delicatissimi in, usu ei percipitur delicatissimi, at everti insolens pri. Ut veniam conceptam."
+                          img-src="https://iqyoe.github.io/puma-web/assets/img/carousel-content-2.png"
+        ></b-carousel-slide>
+
+      </b-carousel>
+
+      <p class="mt-4">
+      </p>
+      
+      <b-container style="margin-top:3em;">
+          <b-row class="title">
+              <h2>NEWS RELEASE</h2>
+          </b-row>
+          <b-row>
+              <b-col v-for="item of items" :key="item.id" v-if="item.id>=ne && item.id<ne+4">
+                  <b-card title="News"
+                          :img-src=item.src
+                          img-alt="Image"
+                          img-top
+                          tag="article"
+                          style="max-width: 30rem;"
+                          class="mb-2">
+                      <p class="card-text">
+                      {{item.pa}}
+                      </p>
+                      <b-button href="#" variant="primary">Read More</b-button>
+                  </b-card>
+              </b-col>
+          </b-row>
+      </b-container>
+
+      <b-container style="margin-top:3em;">
+        <b-row>
+          <h2>Computing Events</h2>
+        </b-row>
+          <b-row>
+            <b-col>
+              <b-card overlay
+                      img-src="https://iqyoe.github.io/puma-web/assets/img/news2.jpg"
+                      img-alt="Image"
+              ></b-card>
+            </b-col>
+            <b-col>
+              <b-card overlay
+                      img-src="https://iqyoe.github.io/puma-web/assets/img/news2.jpg"
+                      img-alt="Image"
+              ></b-card>
+            </b-col>
+          </b-row>
+          <b-row>
+            <b-col>
+              <b-card overlay
+                      img-src="https://iqyoe.github.io/puma-web/assets/img/news2.jpg"
+                      img-alt="Image"
+              ></b-card>
+            </b-col>
+            <b-col>
+              <b-card overlay
+                      img-src="https://iqyoe.github.io/puma-web/assets/img/news2.jpg"
+                      img-alt="Image"
+              ></b-card>
+            </b-col>
+            <b-col>
+              <b-card overlay
+                      img-src="https://iqyoe.github.io/puma-web/assets/img/news2.jpg"
+                      img-alt="Image"
+              ></b-card>
+            </b-col>
+          </b-row>
+      </b-container>
+
+      <b-container style="margin-top:3em;">
+        <b-row>
+          <b-col>
+            <b-card overlay
+                    img-src="https://iqyoe.github.io/puma-web/assets/img/news2.jpg"
+                    img-alt="Image"
+            >
+              <p class="card-text" style="color:#fff">
+                Events and Activities
+              </p>          
+            </b-card>
+          </b-col>
+          <b-col>
+            <b-card overlay
+                    img-src="https://iqyoe.github.io/puma-web/assets/img/news2.jpg"
+                    img-alt="Image"
+            >
+              <p class="card-text" style="color:#fff">
+                Academics
+              </p>          
+            </b-card>
+          </b-col>
+          <b-col>
+            <b-card overlay
+                    img-src="https://iqyoe.github.io/puma-web/assets/img/news2.jpg"
+                    img-alt="Image"
+                    style=""
+            >
+              <p class="card-text" style="color:#fff;">
+                Events and Activities
+              </p>          
+            </b-card>
+          </b-col>
+        </b-row>
+      </b-container>
+    </div>
+    </div>
 </template>
 
 <script>
@@ -195,6 +214,123 @@ h2{
 #car{
   text-shadow: 1px 1px 2px #333;
   margin: 5em 5em;
+}
+#about{
+  height: 80vh;
+  background-image: url("https://iqyoe.github.io/puma-web/assets/img/carousel-content-1.png")
+}
+#overlay{
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  overflow: hidden;
+  color: #fff;
+  text-align: center;
+}
+@-webkit-keyframes ani-mouse {
+	0% {
+	opacity: 1;
+	top: 29%;
+	}
+	15% {
+	opacity: 1;
+	top: 50%;
+	}
+	50% {
+	opacity: 0;
+	top: 50%;
+	}
+	100% {
+	opacity: 0;
+	top: 29%;
+	}
+}
+@-moz-keyframes ani-mouse {
+	0% {
+	opacity: 1;
+	top: 29%;
+	}
+	15% {
+	opacity: 1;
+	top: 50%;
+	}
+	50% {
+	opacity: 0;
+	top: 50%;
+	}
+	100% {
+	opacity: 0;
+	top: 29%;
+	}
+}
+@keyframes ani-mouse {
+	0% {
+	opacity: 1;
+	top: 29%;
+	}
+	15% {
+	opacity: 1;
+	top: 50%;
+	}
+	50% {
+	opacity: 0;
+	top: 50%;
+	}
+	100% {
+	opacity: 0;
+	top: 29%;
+	}
+}
+ .scroll-btn {
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+.scroll-btn > * {
+	font-size: 13px;
+	font-weight: normal;
+	color: #7f8c8d;
+	color: #ffffff;
+	letter-spacing: 2px;
+}
+.scroll-btn > *:hover,
+.scroll-btn > *:focus,
+.scroll-btn > *.active {
+	color: #ffffff;
+}
+.scroll-btn > *:hover,
+.scroll-btn > *:focus,
+.scroll-btn > *:active,
+.scroll-btn > *.active {
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+}
+.scroll-btn .mouse {
+	position: relative;
+	display: block;
+	width: 35px;
+	height: 55px;
+	margin: 0 auto 20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 3px solid white;
+	border-radius: 23px;
+}
+.scroll-btn .mouse > * {
+	position: absolute;
+	display: block;
+	top: 29%;
+	left: 50%;
+	width: 8px;
+	height: 8px;
+	margin: -4px 0 0 -4px;
+	background: white;
+	border-radius: 50%;
+	-webkit-animation: ani-mouse 2.5s linear infinite;
+	-moz-animation: ani-mouse 2.5s linear infinite;
+	animation: ani-mouse 2.5s linear infinite;
 }
 </style>
 
