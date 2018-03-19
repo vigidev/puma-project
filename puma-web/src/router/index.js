@@ -5,6 +5,7 @@ import Event from '@/components/Event'
 import Acad from '@/components/Academic'
 import About from '@/components/About'
 import Contact from '@/components/Contact'
+import Computizen from '@/components/Computizen'
 
 Vue.use(Router)
 
@@ -34,6 +35,11 @@ export default new Router({
       path: '/contact',
       name: 'Contact Us',
       component: Contact
+    },
+    {
+      path: '/computizen',
+      name: 'Computizen',
+      component: Computizen
     }
   ],
   mode: 'history', // https://router.vuejs.org/en/essentials/history-mode.html

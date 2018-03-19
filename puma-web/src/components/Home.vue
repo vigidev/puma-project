@@ -4,7 +4,7 @@
       <div id="overlay">
         <b-container>
           <img src="https://iqyoe.github.io/puma-web/assets/img/horizontal-logo-comp-lengkap-white.png" alt="Logo-comp" style="height:50vh;">
-          <br><router-link :to="'/about'" class="btn btn-primary">About Us</router-link> <a href="#car" class="btn btn-success">News Updates</a>
+          <br><router-link :to="'/about'" class="btn btn-outline-primary">About Us</router-link> <a href="#car" class="btn btn-outline-success">News Updates</a>
           <br><br><br>
           <span class="scroll-btn">
             <a href="#car">
@@ -111,7 +111,7 @@
           </b-row>
       </b-container>
 
-      <b-container style="margin-top:3em;">
+      <!-- <b-container style="margin-top:3em;">
         <b-row>
           <b-col>
             <b-card overlay
@@ -145,7 +145,7 @@
             </b-card>
           </b-col>
         </b-row>
-      </b-container>
+      </b-container> -->
     </div>
     </div>
 </template>
@@ -212,7 +212,7 @@ h2{
     text-transform: uppercase;
 }
 #car{
-  text-shadow: 1px 1px 2px #333;
+  /* text-shadow: 1px 1px 2px #333; */
   margin: 5em 5em;
 }
 #about{

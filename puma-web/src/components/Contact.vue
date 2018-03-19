@@ -1,16 +1,19 @@
 <template>
   <div>
+    <b-container style="margin-top:1%;">
+      <b-breadcrumb :items="breads"/>
+    </b-container>
       <b-container>
           <b-row><h2>Contact Us !</h2></b-row>
           <b-row>
-              <b-col>
+              <b-col cols="4">
                   <h4>Address</h4>
                   <p>President University Campus <br> Jl. Ki Hajar Dewantara, Kota Jababeka, <br> Cikarang Baru, Bekasi 17550 - Indonesia</p>
                   <h4>Email</h4>
                   <p>puma.computing@president.ac.id</p>
                   <h4>Social Media</h4>
               </b-col>
-              <b-col>
+              <b-col cols="8">
                   <h4>Maps</h4>
                    <gmap-map
                         :center="center"
@@ -75,12 +78,20 @@
                             </b-form-group>
                         </b-form-row>
                         <b-form-row>
+                            <label for="">Subject: </label>
+                            <b-form-input id="inputSubject"
+                                          v-model="form.title"
+                                          placeholder="Subject"
+                                          >
+                            </b-form-input>
+                        </b-form-row>
+                        <b-form-row>
                             <label for="">Message: </label>
                             <b-form-textarea id="inputMessage"
                                                 v-model="form.msg"
                                                 placeholder="Your Message Here"
-                                                :rows="3"
-                                                :max-rows="5"
+                                                :rows="4"
+                                                no-resize
                                                 >
                                 </b-form-textarea>
                         </b-form-row>
@@ -97,6 +108,16 @@
 export default {
   data () {
     return {
+      breads:
+      [
+        {
+          text: 'Home',
+          to: {name: 'Home'}
+        },
+        {
+          text: 'Contact'
+        }
+      ],
       center: {lat: -6.2849417, lng: 107.1705597},
       markers: [{
         position: {lat: -6.2849417, lng: 107.1705597}
@@ -105,6 +126,7 @@ export default {
         name: '',
         email: '',
         phone: '',
+        title: '',
         msg: ''
       }
     }

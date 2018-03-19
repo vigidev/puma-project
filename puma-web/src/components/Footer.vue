@@ -66,9 +66,18 @@ export default {
         font-weight: bold;
         margin-top: 1em;
     }
+    ul{
+        padding: 0;
+    }
     li{
         list-style: none;
-        margin: 0;
         text-decoration-style: none;
+    }
+    a{
+        color: rgba(255, 255, 255, .5);
+    }
+    a:hover{
+        color: rgba(255, 255, 255, .75);
+        text-decoration: none;
     }
 </style>

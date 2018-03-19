@@ -17,6 +17,7 @@
           <p>From 2016-2017, PUMA Computing has cabinet called Evolvere. This cabinet is lead by Muhammad Iqbal Lukman as Chairperson and Annasya Christia as Vice Chairperson. The cabinet is divided to 4 division, which are Board of Director, Student Development, Student Activities, and Communication. There are 31 person in Evolvere Cabinet.</p>
         </b-col>
       </b-row>
+      <!-- End of Intro -->
       <b-row>
         <b-col>
           <h3>Computing Dean and Head Study Programme</h3>
@@ -34,10 +35,6 @@
                     Dean of School of Computer Science
                     </p>
                 </b-card>
-            </b-card-group>
-          </b-row>
-          <b-row align-h="center">
-            <b-card-group deck class="mb-2">
                 <b-card title="Drs. Nur Hadisukmana, M.Sc."
                         img-src="http://via.placeholder.com/200x200"
                         img-alt="Drs. Nur Hadisukmana, M.Sc."
@@ -64,45 +61,71 @@
           </b-row>
         </b-col>
       </b-row>
+      <!-- End of Dean and HOSP -->
       <b-row>
         <h3>PUMA Computing Team</h3>
       </b-row>
       <b-row>
-        <b-card>
-          <b-row>
-            <b-col>
-              <img src="https://iqyoe.github.io/puma-web/assets/img/carousel-content-1.png" alt="" srcset="" style="height:50vh;">
-            </b-col>
-            <b-col>
-              <b-list-group flush>
-                <b-list-group-item>
-                  <a href="http://" class="btn btn-primary" v-b-toggle.collapsebod>Board of Director</a>
-                  <b-collapse id="collapsebod" style="margin-top:1.5em;">
-                    <p>About BoD</p>
-                  </b-collapse>
-                </b-list-group-item>
-                <b-list-group-item>
-                  <a href="http://" class="btn btn-primary" v-b-toggle.collapsesa>Student Activity Division</a>
-                  <b-collapse id="collapsesa" style="margin-top:1.5em;">
-                    <p>About SA</p>
-                  </b-collapse>
-                </b-list-group-item>
-                <b-list-group-item>
-                  <a href="http://" class="btn btn-primary" v-b-toggle.collapsesd>Student Development Division</a>
-                  <b-collapse id="collapsesd" style="margin-top:1.5em;">
-                    <p>About SD</p>
-                  </b-collapse>
-                </b-list-group-item>
-                <b-list-group-item>
-                  <a href="http://" class="btn btn-primary" v-b-toggle.collapsecom>Communicaiton Division</a>
-                  <b-collapse id="collapsecom" style="margin-top:1.5em;">
-                    <p>About Communication</p>
-                  </b-collapse>
-                </b-list-group-item>
-              </b-list-group>
-            </b-col>
-          </b-row>
-        </b-card>
+        <b-col class="mb-3">
+          <b-card no-body>
+            <b-tabs pills card vertical>
+              <b-tab title="Board of Director" active>
+                <b-row>
+                  <b-col cols="6">
+                    <img src="https://iqyoe.github.io/puma-web/assets/img/carousel-content-1.png" alt="" style="height:30vh;">
+                  </b-col>
+                  <b-col>
+                    Board of Director Description
+                  </b-col>
+                </b-row>
+              </b-tab>
+              <b-tab title="Student Activity">
+                <b-row>
+                  <b-col cols="6">
+                    <img src="https://iqyoe.github.io/puma-web/assets/img/carousel-content-1.png" alt="" style="height:30vh;">
+                  </b-col>
+                  <b-col>
+                    Student Activity Division Description
+                  </b-col>
+                </b-row>
+              </b-tab>
+              <b-tab title="Student Development">
+                <b-row>
+                  <b-col cols="6">
+                    <img src="https://iqyoe.github.io/puma-web/assets/img/carousel-content-1.png" alt="" style="height:30vh;">
+                  </b-col>
+                  <b-col>
+                    Student Development Division Description
+                  </b-col>
+                </b-row>
+              </b-tab>
+              <b-tab title="Communication">
+                <b-row>
+                  <b-col cols="6">
+                    <img src="https://iqyoe.github.io/puma-web/assets/img/carousel-content-1.png" alt="" style="height:30vh;">
+                  </b-col>
+                  <b-col>
+                    Communication Description
+                  </b-col>
+                </b-row>
+              </b-tab>
+            </b-tabs>
+          </b-card>
+        </b-col>
+      </b-row>
+      <!-- End of PUMA Computing Team -->
+      <b-row>
+        <h3>PUMA Computing Web Development Team</h3>
+      </b-row>
+      <b-row>
+        <b-col v-for="dev of devs" :key="dev.name">
+          <b-card img-src="http://via.placeholder.com/200x200"
+                  :title="dev.name"
+                  class="text-center"
+          >
+
+          </b-card>
+        </b-col>
       </b-row>
   </b-container>
   </div>
@@ -118,6 +141,26 @@
         },
         {
           text: 'About'
+        }],
+        devs: [{
+          name: 'Rakha Viantoni',
+          in: '',
+          git: ''
+        },
+        {
+          name: 'Muhammad Iqbal Lukman',
+          in: '',
+          git: ''
+        },
+        {
+          name: 'Teuku Hilman Revanda',
+          in: '',
+          git: ''
+        },
+        {
+          name: 'H',
+          in: '',
+          git: ''
         }]
       }
     },

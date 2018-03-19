@@ -1,5 +1,5 @@
 <template>
-  <b-container fluid>
+  <b-container>
     <b-container style="margin-top:1%;">
       <b-breadcrumb :items="breads"/>
     </b-container>
@@ -9,11 +9,11 @@
         </b-row>
         <b-row>
           <b-col v-for="ev of evs" 
-                 :key="ev.id">
+                 :key="ev.id"
+                 cols="4">
             <b-card :img-src="ev.bg"
                     :img-alt="ev.t"
                     :title="ev.t"
-                    style="width:30vw;"
             >
             <p class="card-text">
               {{ev.d}}
@@ -30,11 +30,11 @@
         </b-row>
         <b-row>
           <b-col v-for="ev of evs" 
-                 :key="ev.id">
+                 :key="ev.id"
+                 cols="4">
             <b-card :img-src="ev.bg"
                     :img-alt="ev.t"
                     :title="ev.t"
-                    style="width:30vw;"
             >
             <p class="card-text">
               {{ev.d}}
@@ -114,7 +114,7 @@ h2{
     text-transform: uppercase;
 }
 .card{
-  margin-bottom: 1em;
+  margin: 0 0 1em 0;
 }
 #Event{
     margin-top: 3em;
