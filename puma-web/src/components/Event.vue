@@ -18,6 +18,7 @@
             <p class="card-text">
               {{ev.d}}
             </p>
+            <a href="" class="btn btn-primary">Read More</a>
             </b-card>
           </b-col>
         </b-row>
@@ -38,6 +39,7 @@
             <p class="card-text">
               {{ev.d}}
             </p>
+            <a href="" class="btn btn-primary">Read More</a>
             </b-card>
           </b-col>
         </b-row>

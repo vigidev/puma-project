@@ -30,12 +30,12 @@
               <b-col>
                   <h4>Information</h4>
                   <ul>
-                    <li class=""><router-link :to="'/'" class="" exact>Home</router-link></li>
-                    <li class=""><router-link :to="'/event'" class="">Event</router-link></li>
-                    <li class=""><router-link :to="'/academic'" class="">Academic</router-link></li>
-                    <li class=""><router-link :to="'/about'" class="">About</router-link></li>
-                    <li class=""><router-link :to="'/about'" class="">Computizen</router-link></li>
-                    <li class=""><router-link :to="'/about'" class="">Contact Us</router-link></li>
+                    <li class="inf"><router-link :to="'/'" class="" exact>Home</router-link></li>
+                    <li class="inf"><router-link :to="'/event'" class="">Event</router-link></li>
+                    <li class="inf"><router-link :to="'/academic'" class="">Academic</router-link></li>
+                    <li class="inf"><router-link :to="'/about'" class="">About</router-link></li>
+                    <li class="inf"><router-link :to="'/about'" class="">Computizen</router-link></li>
+                    <li class="inf"><router-link :to="'/about'" class="">Contact Us</router-link></li>
                   </ul>
               </b-col>
           </b-row>
@@ -69,5 +69,6 @@ export default {
     li{
         list-style: none;
         margin: 0;
+        text-decoration-style: none;
     }
 </style>

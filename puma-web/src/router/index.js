@@ -4,6 +4,7 @@ import Home from '@/components/Home'
 import Event from '@/components/Event'
 import Acad from '@/components/Academic'
 import About from '@/components/About'
+import Contact from '@/components/Contact'
 
 Vue.use(Router)
 
@@ -28,6 +29,11 @@ export default new Router({
       path: '/about',
       name: 'About',
       component: About
+    },
+    {
+      path: '/contact',
+      name: 'Contact Us',
+      component: Contact
     }
   ],
   mode: 'history', // https://router.vuejs.org/en/essentials/history-mode.html

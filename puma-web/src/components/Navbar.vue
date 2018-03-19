@@ -20,7 +20,7 @@
             <li class="nav-item"><router-link :to="'/academic'" class="nav-link">Academic</router-link></li>
             <li class="nav-item"><router-link :to="'/about'" class="nav-link">About</router-link></li>
             <li class="nav-item"><router-link :to="'/'" class="nav-link">Computizen</router-link></li>
-            <li class="nav-item"><router-link :to="'/'" class="nav-link">Contact Us</router-link></li>
+            <li class="nav-item"><router-link :to="'/contact'" class="nav-link">Contact Us</router-link></li>
         </b-navbar-nav>
         </b-row>
         </b-container>
