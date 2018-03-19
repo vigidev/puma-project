@@ -9,7 +9,7 @@
               </b-col>
               <b-col>
                   <h4>Contact Us</h4>
-                  <p style="font-weight:bold;">Email</p>
+                  <p style="font-weight:bold;margin-bottom:0;">Email</p>
                   <p>puma.computing@president.ac.id</p>
                   <h4>Maps</h4>
                    <gmap-map
