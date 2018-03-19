@@ -1,24 +1,54 @@
 <template>
-  <div>
+  <div id="home">
+
     <div id="about">
       <div id="overlay">
         <b-container>
-          <img src="https://iqyoe.github.io/puma-web/assets/img/horizontal-logo-comp-lengkap-white.png" alt="Logo-comp" style="height:30vw;">
-          <br><router-link :to="'/about'" class="btn btn-outline-primary">About Us</router-link> <a href="#car" class="btn btn-outline-success">News Updates</a>
-          <br><br><br>
-          <span class="scroll-btn">
-            <a href="#car">
-              <span class="mouse">
-                <span>
+          <b-row align-h="center">
+            <b-img fluid src="https://iqyoe.github.io/puma-web/assets/img/horizontal-logo-comp-lengkap-white.png" alt="Logo-comp" />
+          </b-row>
+          <b-row class="mb-3">
+            <b-col align-self="center">
+              <router-link :to="'/about'" class="btn btn-outline-primary">About Us</router-link>
+              <a href="#" v-scroll-to="'#news'" class="btn btn-outline-success">News Updates</a>
+            </b-col>
+          </b-row>
+          <b-row align-h="center" class="mb-3">
+            <span class="scroll-btn">
+              <a href="#" v-scroll-to="'#news'">
+                <span class="mouse">
+                  <span>
+                  </span>
                 </span>
-              </span>
-            </a>
-            <p>scroll me</p>
-          </span>
+              </a>
+              <p>scroll me</p>
+            </span>
+          </b-row>
         </b-container>
       </div>
+      <vue-particles
+        color="#dedede"
+        :particleOpacity="0.7"
+        :particlesNumber="80"
+        shapeType="circle"
+        :particleSize="4"
+        linesColor="#dedede"
+        :linesWidth="1"
+        :lineLinked="true"
+        :lineOpacity="0.4"
+        :linesDistance="150"
+        :moveSpeed="3"
+        :hoverEffect="true"
+        hoverMode="grab"
+        :clickEffect="true"
+        clickMode="push"
+      >
+      </vue-particles>
     </div>
-    <div id="car">   
+      
+    <b-container>
+
+    <div class="mt-5">   
       <b-carousel id="carousel1"
                   style=""
                   controls
@@ -45,16 +75,14 @@
         ></b-carousel-slide>
 
       </b-carousel>
+    </div>
 
-      <p class="mt-4">
-      </p>
-      
-      <b-container style="margin-top:3em;" fluid>
-          <b-row class="title">
+          <b-row id="news" class="mt-3">
               <h2>NEWS RELEASE</h2>
           </b-row>
-          <b-row>
-              <b-col v-for="item of items" :key="item.id" v-if="item.id>=ne && item.id<ne+4" sm="12" md="3">
+
+          <b-row class="mt-3">
+              <b-col v-for="item of items" :key="item.id" v-if="item.id>=ne && item.id<ne+4">
                   <b-card title="News"
                           :img-src=item.src
                           img-alt="Image"
@@ -69,13 +97,12 @@
                   </b-card>
               </b-col>
           </b-row>
-      </b-container>
-
-      <b-container style="margin-top:3em;">
-        <b-row>
-          <h2>Computing Events</h2>
+          
+        <b-row class="mt-3">
+          <h2>Events</h2>
         </b-row>
-          <b-row>
+
+          <b-row class="mt-3">
             <b-col sm="12" md="4">
               <b-card overlay
                       img-src="https://iqyoe.github.io/puma-web/assets/img/news2.jpg"
@@ -209,20 +236,34 @@ h2{
     border-bottom: solid 5px;
     text-transform: uppercase;
 }
-#car{
-  /* text-shadow: 1px 1px 2px #333; */
-  margin: 5em 5em;
-}
 #about{
-  height: 80vh;
-  background-image: url("https://iqyoe.github.io/puma-web/assets/img/carousel-content-1.png")
+  position: relative;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 100%;
+  width: 100%;
 }
 #overlay{
   background-color: rgba(0, 0, 0, 0.7);
+  min-height: 95vh;
   height: 100%;
+  width: 100%;
   overflow: hidden;
   color: #fff;
   text-align: center;
+  z-index: 999;
+}
+#particles-js{
+  background-image: url("https://iqyoe.github.io/puma-web/assets/img/carousel-content-1.png");
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  min-height: 95vh;
+  width: 100%;
+  height: 80vh;
 }
 @-webkit-keyframes ani-mouse {
 	0% {

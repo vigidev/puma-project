@@ -1,13 +1,13 @@
 <template>
-  <div id="f">
-      <b-container fluid>
+  <div id="footer">
+      <b-container>
           <b-row>
-              <b-col sm="12" md="3">
-                  <img src="https://iqyoe.github.io/puma-web/assets/img/horizontal-logo-comp-lengkap-white.png" alt="Logo Computing" style="max-width:20em;">
+              <b-col>
+                  <b-img fluid src="https://iqyoe.github.io/puma-web/assets/img/horizontal-logo-comp-lengkap-white.png" alt="Logo Computing" />
                   <h4>Address</h4>
                   <p>President University Campus <br> Jl. Ki Hajar Dewantara, Kota Jababeka, <br> Cikarang Baru, Bekasi 17550 - Indonesia</p>
               </b-col>
-              <b-col sm="12" md="3">
+              <b-col>
                   <h4>Contact Us</h4>
                   <p style="font-weight:bold;margin-bottom:0;">Email</p>
                   <p>puma.computing@president.ac.id</p>
@@ -27,7 +27,7 @@
                         ></gmap-marker>
                     </gmap-map>
               </b-col>
-              <b-col sm="12" md="3">
+              <b-col>
                   <h4>Information</h4>
                   <ul>
                     <li class="inf"><router-link :to="'/'" class="" exact>Home</router-link></li>
@@ -57,7 +57,7 @@ export default {
 </script>
 
 <style scoped>
-    #f {
+    #footer {
         background: #000411;
         margin-top: 3em;
         color: #fff;

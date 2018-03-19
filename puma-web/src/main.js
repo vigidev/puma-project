@@ -7,7 +7,15 @@ import App from './App'
 import router from './router'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
-// import VueParticles from 'vue-particles'
+import VueParticles from 'vue-particles'
+import VueScrollTo from 'vue-scrollto'
+import FontAwesomeIcon from '@fortawesome/vue-fontawesome'
+import fontawesome from '@fortawesome/fontawesome'
+import brands from '@fortawesome/fontawesome-free-brands'
+
+Vue.use(FontAwesomeIcon)
+Vue.component('font-awesome-icon', FontAwesomeIcon)
+fontawesome.library.add(brands)
 
 Vue.use(BootstrapVue)
 Vue.config.productionTip = false
@@ -19,7 +27,8 @@ Vue.use(VueGoogleMaps, {
     // (as you require)
   }
 })
-// Vue.use(VueParticles)
+Vue.use(VueParticles)
+Vue.use(VueScrollTo)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

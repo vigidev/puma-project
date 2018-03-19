@@ -1,15 +1,17 @@
 <template>
-  <div class="mt-3" id="computizen">
-      <b-container style="margin-top:1%;">
+  <div id="computizen">
+      <b-container class="mt-3">
         <b-breadcrumb :items="breads"/>
-      </b-container>
-      <b-container>
-          <b-row>
-              <b-col cols="8">
-                  <b-row>
-                      <h2>Your Aspiration Matters !</h2>
+
+          <b-row class="mt-3 mb-3">
+              <b-col sm="12" md="8" class="mb-3">
+
+                  <b-row align-v="center">
+                    <h2>Aspiration Box</h2>
                   </b-row>
-                  <b-row>
+
+                  <b-row align-v="start" class="mb-3">
+                    <b-col sm="12" class="mb-3">
                       <b-form @reset="onReset">
                         <b-form-group>
                             <b-form-row inline>
@@ -71,59 +73,92 @@
                         </b-form-group>
                         <b-button type="submit" variant="primary">Submit</b-button>
                         <b-button type="reset" variant="danger">Reset</b-button>
-                    </b-form>
+                      </b-form>
+                    </b-col>
                   </b-row>
               </b-col>
-              <b-col>
-                <b-card title="Downloadables">
-                  <b-list-group>
-                    <b-list-group-item><a href="/">Downloadable Item</a></b-list-group-item>
-                    <b-list-group-item><a href="/">Downloadable Item</a></b-list-group-item>
-                    <b-list-group-item><a href="/">Downloadable Item</a></b-list-group-item>
-                  </b-list-group>
-                </b-card>
+              <b-col sm="12" md="4" class="mb-3">
+                <b-row align-v="center" class="mb-3">
+                  <b-col sm="12">
+                    <b-card title="Downloadables">
+                    <b-list-group>
+                        <b-list-group-item><a href="/">Downloadable Item</a></b-list-group-item>
+                        <b-list-group-item><a href="/">Downloadable Item</a></b-list-group-item>
+                        <b-list-group-item><a href="/">Downloadable Item</a></b-list-group-item>
+                    </b-list-group>
+                    </b-card>
+                  </b-col>
+                </b-row>
               </b-col>
           </b-row>
-          <b-row>
-              <b-col cols="8">
-                  <b-row>
-                      <h2>Latest News</h2>
+
+          <b-row class="mb-3">
+              <b-col sm="12" class="mb-3">
+
+                  <b-row align-v="center">
+                    <h2>Latest News</h2>
                   </b-row>
-                  <b-row>
-                    <b-card>
-                        <div class="card-body">
-                            <b-row>
-                                <b-col>
-                                    <img src="https://iqyoe.github.io/puma-web/assets/img/carousel-content-2.png" alt="" style="height:10em;">
-                                </b-col>
-                                <b-col>
-                                    <h3>News 1</h3>
-                                    <p>Lorem ipsum dolor sit amet, at quem dicant ceteros per, et per tota phaedrum, modo explicari mei cu. At eam iudicabit efficiantur comprehensam. Paulo laudem ne nec, cum eu nibh consul ullamcorper. Alii quando iriure at eam, probo offendit cu mei, tritani voluptua ex vis. Eam cu nisl option equidem.</p>
-                                    <a href="" class="btn btn-primary">Read More</a>
-                                </b-col>
-                            </b-row>
-                        </div>
-                    </b-card>
+
+                  <b-row class="mb-3">
+                    <b-col sm="12">
+                        <b-card>
+                            <div class="card-body">
+                                <b-row class="mb-3">
+                                    <b-col sm="4" class="mb-3">
+                                        <b-img fluid src="https://iqyoe.github.io/puma-web/assets/img/carousel-content-2.png" alt="cademic news" style="height:10em;" />
+                                    </b-col>
+                                    <b-col sm="8" class="mb-3">
+                                        <h3>News 1</h3>
+                                        <p>Lorem ipsum dolor sit amet, at quem dicant ceteros per, et per tota phaedrum, modo explicari mei cu. At eam iudicabit efficiantur comprehensam. Paulo laudem ne nec, cum eu nibh consul ullamcorper. Alii quando iriure at eam, probo offendit cu mei, tritani voluptua ex vis. Eam cu nisl option equidem.</p>
+                                        <a href="" class="btn btn-primary">Read More</a>
+                                    </b-col>
+                                </b-row>
+                                <b-row class="mb-3">
+                                    <b-col sm="4" class="mb-3">
+                                        <b-img fluid src="https://iqyoe.github.io/puma-web/assets/img/carousel-content-2.png" alt="cademic news" style="height:10em;" />
+                                    </b-col>
+                                    <b-col sm="8">
+                                        <h3>News 2</h3>
+                                        <p>Lorem ipsum dolor sit amet, at quem dicant ceteros per, et per tota phaedrum, modo explicari mei cu. At eam iudicabit efficiantur comprehensam. Paulo laudem ne nec, cum eu nibh consul ullamcorper. Alii quando iriure at eam, probo offendit cu mei, tritani voluptua ex vis. Eam cu nisl option equidem.</p>
+                                        <a href="" class="btn btn-primary">Read More</a>
+                                    </b-col>
+                                </b-row>
+                            </div>
+                        </b-card>
+                    </b-col>
                   </b-row>
               </b-col>
-              <b-col style="margin-left:1em;">
-                  <b-row>
+
+              <b-col sm="12" class="mb-3">
+
+                  <b-row align-v="center">
                       <h2>Latest Event</h2>
                   </b-row>
-                  <b-row>
+
+                  <b-row class="mb-3">
+                    <b-col sm="12" class="mb-3">
                       <b-card img-src="https://iqyoe.github.io/puma-web/assets/img/carousel-content-1.png"
                               img-alt="event photo"
                               title="Event">
                             <p>description</p>
                             <a href="" class="btn btn-primary">Read More</a>
                       </b-card>
+                    </b-col>
                   </b-row>
+
               </b-col>
           </b-row>
-          <b-row>
+
+          <b-row class="mb-3">
               <h2>PUMA Audit</h2>
-              <b-table striped hover :items="cashs"></b-table>
           </b-row>
+
+          <b-row class="mb-3">
+            <b-col sm="12" class="mb-3">
+              <b-table responsive striped hover :items="cashs"></b-table>
+            </b-col>
+          </b-row>
+
       </b-container>
   </div>
 </template>

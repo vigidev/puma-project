@@ -1,16 +1,16 @@
 <template>
-  <b-container>
-    <b-container style="margin-top:1%;">
+  <div id="event">
+    <b-container class="mt-3">
       <b-breadcrumb :items="breads"/>
-    </b-container>
-      <div id="Event">
+      
         <b-row>
-          <h2>Events</h2>
+          <h2>Event</h2>
         </b-row>
-        <b-row>
+        
+        <b-row class="mb-3">
           <b-col v-for="ev of evs" 
                  :key="ev.id"
-                 cols="4">
+                 sm="12" md="4">
             <b-card :img-src="ev.bg"
                     :img-alt="ev.t"
                     :title="ev.t"
@@ -22,16 +22,15 @@
             </b-card>
           </b-col>
         </b-row>
-      </div>
-
-      <div id="Aktivitas">
+        
         <b-row>
           <h2>Activity</h2>
         </b-row>
-        <b-row>
+
+        <b-row class="mb-3">
           <b-col v-for="ev of evs" 
                  :key="ev.id"
-                 cols="4">
+                  sm="12" md="4">
             <b-card :img-src="ev.bg"
                     :img-alt="ev.t"
                     :title="ev.t"
@@ -43,8 +42,9 @@
             </b-card>
           </b-col>
         </b-row>
-      </div>
-  </b-container>
+
+    </b-container>
+  </div>
 </template>
 
 <script>
@@ -104,22 +104,21 @@ export default {
 </script>
 
 <style scoped>
-h2{
-    margin: auto;
-    margin-bottom: 1em;
-    font-size: 2.5em;
-    padding-bottom: .2em;
-    font-weight: bold;
-    border-bottom: solid 5px;
-    text-transform: uppercase;
-}
-.card{
-  margin: 0 0 1em 0;
-}
-#Event{
-    margin-top: 3em;
-}
-#Aktivitas{
-    margin-top: 3em;
-}
+    h2 {
+        margin: 1.5em auto;
+        font-size: 2.5em;
+        padding-bottom: .2em;
+        font-weight: bold;
+        border-bottom: solid 5px;
+        text-transform: uppercase;
+    }
+    .card {
+      margin: 0 0 1em 0;
+    }
+    /* #Event {
+        margin-top: 3em;
+    }
+    #Aktivitas {
+        margin-top: 3em;
+    } */
 </style>

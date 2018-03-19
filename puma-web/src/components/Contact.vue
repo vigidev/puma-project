@@ -1,10 +1,12 @@
 <template>
-  <div>
-    <b-container style="margin-top:1%;">
-      <b-breadcrumb :items="breads"/>
-    </b-container>
-      <b-container>
-          <b-row><h2>Contact Us !</h2></b-row>
+  <div id="contact">
+      <b-container class="mt-3">
+      <b-breadcrumb :items="breads" />
+
+          <b-row>
+            <h2>Contact</h2>
+          </b-row>
+
           <b-row class="mb-3">
               <b-col cols="4">
                   <h4>Address</h4>
@@ -31,13 +33,12 @@
                     </gmap-map>
               </b-col>
           </b-row>
+          
           <b-row>
-              <h2>Tell Us !</h2>
+              <h2>Tell Us</h2>
           </b-row>
-      </b-container>
-      
-          <b-container>
-              <b-row align-h="center">
+          
+              <b-row class="mb-3" align-h="center">
                 <b-form @reset="onReset">
                     <b-form-group>
                         <b-form-row inline>
@@ -100,7 +101,7 @@
                     <b-button type="reset" variant="danger">Reset</b-button>
                 </b-form>
             </b-row>
-          </b-container>
+    </b-container>
   </div>
 </template>
 
@@ -143,14 +144,13 @@ export default {
 }
 </script>
 
-<style>
-h2{
-    margin: auto;
-    margin-bottom: 1em;
-    font-size: 2.5em;
-    padding-bottom: .2em;
-    font-weight: bold;
-    border-bottom: solid 5px;
-    text-transform: uppercase;
-}
+<style scoped>
+    h2 {
+        margin: 1.5em auto;
+        font-size: 2.5em;
+        padding-bottom: .2em;
+        font-weight: bold;
+        border-bottom: solid 5px;
+        text-transform: uppercase;
+    }
 </style>
