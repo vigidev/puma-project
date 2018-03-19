@@ -71,7 +71,7 @@
             <b-tabs pills card vertical>
               <b-tab title="Board of Director" active>
                 <b-row>
-                  <b-col cols="6">
+                  <b-col v-show="responsive" md="6">
                     <img src="https://iqyoe.github.io/puma-web/assets/img/carousel-content-1.png" alt="" style="height:30vh;">
                   </b-col>
                   <b-col>
@@ -81,7 +81,7 @@
               </b-tab>
               <b-tab title="Student Activity">
                 <b-row>
-                  <b-col cols="6">
+                  <b-col v-show="responsive" md="6">
                     <img src="https://iqyoe.github.io/puma-web/assets/img/carousel-content-1.png" alt="" style="height:30vh;">
                   </b-col>
                   <b-col>
@@ -91,7 +91,7 @@
               </b-tab>
               <b-tab title="Student Development">
                 <b-row>
-                  <b-col cols="6">
+                  <b-col v-show="responsive" md="6">
                     <img src="https://iqyoe.github.io/puma-web/assets/img/carousel-content-1.png" alt="" style="height:30vh;">
                   </b-col>
                   <b-col>
@@ -101,7 +101,7 @@
               </b-tab>
               <b-tab title="Communication">
                 <b-row>
-                  <b-col cols="6">
+                  <b-col v-show="responsive" md="6">
                     <img src="https://iqyoe.github.io/puma-web/assets/img/carousel-content-1.png" alt="" style="height:30vh;">
                   </b-col>
                   <b-col>
@@ -118,7 +118,7 @@
         <h3>PUMA Computing Web Development Team</h3>
       </b-row>
       <b-row>
-        <b-col v-for="dev of devs" :key="dev.name">
+        <b-col v-for="dev of devs" :key="dev.name" sm="3">
           <b-card img-src="http://via.placeholder.com/200x200"
                   :title="dev.name"
                   class="text-center"
@@ -135,6 +135,7 @@
   export default {
     data () {
       return {
+        responsive: true,
         items: [{
           text: 'Home',
           to: { name: 'Home' }
@@ -158,13 +159,22 @@
           git: ''
         },
         {
-          name: 'H',
+          name: 'Handy',
           in: '',
           git: ''
         }]
       }
     },
-    name: 'About'
+    name: 'About',
+    methods: {
+      picShow () {
+        if (window.innerWidth > 720) {
+          this.responsive = true
+        } else {
+          this.responsive = false
+        }
+      }
+    }
   }
 </script>
 

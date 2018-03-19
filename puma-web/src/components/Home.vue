@@ -3,7 +3,7 @@
     <div id="about">
       <div id="overlay">
         <b-container>
-          <img src="https://iqyoe.github.io/puma-web/assets/img/horizontal-logo-comp-lengkap-white.png" alt="Logo-comp" style="height:50vh;">
+          <img src="https://iqyoe.github.io/puma-web/assets/img/horizontal-logo-comp-lengkap-white.png" alt="Logo-comp" style="height:30vw;">
           <br><router-link :to="'/about'" class="btn btn-outline-primary">About Us</router-link> <a href="#car" class="btn btn-outline-success">News Updates</a>
           <br><br><br>
           <span class="scroll-btn">
@@ -49,12 +49,12 @@
       <p class="mt-4">
       </p>
       
-      <b-container style="margin-top:3em;">
+      <b-container style="margin-top:3em;" fluid>
           <b-row class="title">
               <h2>NEWS RELEASE</h2>
           </b-row>
           <b-row>
-              <b-col v-for="item of items" :key="item.id" v-if="item.id>=ne && item.id<ne+4">
+              <b-col v-for="item of items" :key="item.id" v-if="item.id>=ne && item.id<ne+4" sm="12" md="3">
                   <b-card title="News"
                           :img-src=item.src
                           img-alt="Image"
@@ -76,33 +76,31 @@
           <h2>Computing Events</h2>
         </b-row>
           <b-row>
-            <b-col>
+            <b-col sm="12" md="4">
               <b-card overlay
                       img-src="https://iqyoe.github.io/puma-web/assets/img/news2.jpg"
                       img-alt="Image"
               ></b-card>
             </b-col>
-            <b-col>
+            <b-col sm="12" md="4">
               <b-card overlay
                       img-src="https://iqyoe.github.io/puma-web/assets/img/news2.jpg"
                       img-alt="Image"
               ></b-card>
             </b-col>
-          </b-row>
-          <b-row>
-            <b-col>
+            <b-col sm="12" md="4">
               <b-card overlay
                       img-src="https://iqyoe.github.io/puma-web/assets/img/news2.jpg"
                       img-alt="Image"
               ></b-card>
             </b-col>
-            <b-col>
+            <b-col sm="12" md="4">
               <b-card overlay
                       img-src="https://iqyoe.github.io/puma-web/assets/img/news2.jpg"
                       img-alt="Image"
               ></b-card>
             </b-col>
-            <b-col>
+            <b-col sm="12" md="4">
               <b-card overlay
                       img-src="https://iqyoe.github.io/puma-web/assets/img/news2.jpg"
                       img-alt="Image"
