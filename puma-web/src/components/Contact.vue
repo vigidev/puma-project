@@ -145,7 +145,8 @@ export default {
 
 <style>
 h2{
-    margin: 1.5em auto;
+    margin: auto;
+    margin-bottom: 1em;
     font-size: 2.5em;
     padding-bottom: .2em;
     font-weight: bold;
