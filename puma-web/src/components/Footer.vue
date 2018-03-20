@@ -2,15 +2,14 @@
   <div id="footer">
       <b-container>
           <b-row>
-              <b-col>
+              <b-col cols="4">
                   <b-img fluid src="https://iqyoe.github.io/puma-web/assets/img/horizontal-logo-comp-lengkap-white.png" alt="Logo Computing" />
                   <h4>Address</h4>
                   <p>President University Campus <br> Jl. Ki Hajar Dewantara, Kota Jababeka, <br> Cikarang Baru, Bekasi 17550 - Indonesia</p>
               </b-col>
               <b-col>
                   <h4>Contact Us</h4>
-                  <p style="font-weight:bold;margin-bottom:0;">Email</p>
-                  <p>puma.computing@president.ac.id</p>
+                  <p style="margin-bottom:0;"><b>Email:</b> puma.computing@president.ac.id</p>
                   <h4>Maps</h4>
                    <gmap-map
                         :center="center"
@@ -27,7 +26,7 @@
                         ></gmap-marker>
                     </gmap-map>
               </b-col>
-              <b-col>
+              <b-col cols="2">
                   <h4>Information</h4>
                   <ul>
                     <li class="inf"><router-link :to="'/'" class="" exact>Home</router-link></li>
