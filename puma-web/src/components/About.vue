@@ -107,8 +107,8 @@
                       footer-tag="footer"
               >
               <em slot="footer">
-                <a style="font-size:1.5em;" :href="'https://linkedin.com/'.in" target="_blank"><font-awesome-icon :icon="['fab', 'linkedin']" /></a> <span>&nbsp;</span> 
-                <a style="font-size:1.5em;" :href="'https://github.com/'.git" target="_blank"><font-awesome-icon :icon="['fab', 'github']" /></a>
+                <a :href="'https://linkedin.com/in/' + dev.in" class="in" target="_blank"><font-awesome-icon :icon="['fab', 'linkedin']" /></a> &nbsp 
+                <a :href="'https://github.com/' + dev.git" class="git" target="_blank"><font-awesome-icon :icon="['fab', 'github']" /></a>
               </em>
               </b-card>
             </b-col>
@@ -148,7 +148,7 @@
           img: 'http://via.placeholder.com/200x200'
         }],
         devs: [{
-          name: 'Rakha Viantoni Prastya',
+          name: 'Rakha Viantoni',
           in: 'rakhaviantoni',
           git: 'rakhaviantoni'
         },
@@ -158,7 +158,7 @@
           git: 'iqyoe'
         },
         {
-          name: 'Teuku Hilman Revanda',
+          name: 'Teuku Hilman',
           in: 'thilmanr',
           git: 'teukuatjeh'
         },
@@ -190,5 +190,17 @@
         font-weight: bold;
         border-bottom: solid 5px;
         text-transform: uppercase;
+    }
+    a.in {
+      color: rgba(0, 0, 0, 1);
+    }
+    a.in:hover {
+      color: rgba(0, 119, 181, 1);
+    }
+    a.git {
+      color: rgba(0, 0, 0, 1);
+    }
+    a.git:hover {
+      color: rgba(36, 41, 46, 1);
     }
 </style>

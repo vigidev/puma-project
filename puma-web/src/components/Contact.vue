@@ -9,17 +9,18 @@
 
           <b-row class="mb-3">
               <b-col cols="4">
-                  <h4>Address</h4>
+                <h4>Address</h4>
                   <p>President University Campus <br> Jl. Ki Hajar Dewantara, Kota Jababeka, <br> Cikarang Baru, Bekasi 17550 - Indonesia</p>
-                  <h4>Email</h4>
+                <h4>Email</h4>
                   <p>puma.computing@president.ac.id</p>
                   <h4>Social Media</h4>
-                  <a href="" class="sm"><font-awesome-icon :icon="['fab', 'youtube']"></font-awesome-icon></a>
-                  <a href="" class="sm"><font-awesome-icon :icon="['fab', 'facebook']"></font-awesome-icon></a>
-                  <a href="" class="sm"><font-awesome-icon :icon="['fab', 'instagram']"></font-awesome-icon></a>
-                  <a href="" class="sm"><font-awesome-icon :icon="['fab', 'line']"></font-awesome-icon></a>
-                  <a href="" class="sm"><font-awesome-icon :icon="['fab', 'ask']"></font-awesome-icon></a>
+                  <a href="https://www.youtube.com/channel/UCTuJBY7PYu_6-Tin6SEAFhA" class="sm"><font-awesome-icon :icon="['fab', 'youtube']" size="lg" /></a>
+                  <a href="https://facebook.com/pumacomputing/" class="sm"><font-awesome-icon :icon="['fab', 'facebook']" size="lg" /></a>
+                  <a href="https://instagram.com/pucomputing/" class="sm"><font-awesome-icon :icon="['fab', 'instagram']" size="lg" /></a>
+                  <a href="http://line.me/ti/p/~pucomputing" class="sm"><font-awesome-icon :icon="['fab', 'line']" size="lg" /></a>
+                  <!-- <a href="" class="sm"><font-awesome-icon :icon="['fab', 'ask']" size="lg" /></a> -->
               </b-col>
+
               <b-col cols="8">
                   <h4>Maps</h4>
                    <gmap-map

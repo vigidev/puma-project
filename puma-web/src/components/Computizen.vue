@@ -105,7 +105,7 @@
                             <div class="card-body">
                                 <b-row class="mb-3">
                                     <b-col sm="4" class="mb-3">
-                                        <b-img fluid src="https://iqyoe.github.io/puma-web/assets/img/carousel-content-2.png" alt="cademic news" style="height:10em;" />
+                                        <b-img fluid src="https://iqyoe.github.io/puma-web/assets/img/carousel-content-2.png" alt="academic news" style="height:10em;" />
                                     </b-col>
                                     <b-col sm="8" class="mb-3">
                                         <h3>News 1</h3>
