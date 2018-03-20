@@ -95,38 +95,44 @@
           <b-row class="mb-3">
               <b-col sm="12" class="mb-3">
 
-                  <b-row align-v="center">
-                    <h2>Latest News</h2>
-                  </b-row>
-
-                  <b-row class="mb-3">
+                <b-row align-v="center">
+                  <h2>Latest News</h2>
+                </b-row>
+                  
+                <b-row class="mb-3">
                     <b-col sm="12">
                         <b-card>
-                            <div class="card-body">
-                                <b-row class="mb-3">
-                                    <b-col sm="4" class="mb-3">
-                                        <b-img fluid src="https://iqyoe.github.io/puma-web/assets/img/carousel-content-2.png" alt="academic news" style="height:10em;" />
-                                    </b-col>
-                                    <b-col sm="8" class="mb-3">
-                                        <h3>News 1</h3>
-                                        <p>Lorem ipsum dolor sit amet, at quem dicant ceteros per, et per tota phaedrum, modo explicari mei cu. At eam iudicabit efficiantur comprehensam. Paulo laudem ne nec, cum eu nibh consul ullamcorper. Alii quando iriure at eam, probo offendit cu mei, tritani voluptua ex vis. Eam cu nisl option equidem.</p>
-                                        <a href="" class="btn btn-primary">Read More</a>
-                                    </b-col>
+                                <b-row class="mt-3">
+                                <b-col sm="4" class="mb-3">
+                                    <b-img fluid src="https://iqyoe.github.io/puma-web/assets/img/carousel-content-2.png" alt="cademic news" style="height:10em;" />
+                                </b-col>
+                                <b-col sm="8" class="mb-3">
+                                    <h3>News 1</h3>
+                                    <p>Lorem ipsum dolor sit amet, at quem dicant ceteros per, et per tota phaedrum, modo explicari mei cu. At eam iudicabit efficiantur comprehensam. Paulo laudem ne nec, cum eu nibh consul ullamcorper. Alii quando iriure at eam, probo offendit cu mei, tritani voluptua ex vis. Eam cu nisl option equidem.</p>
+                                    <router-link :to="'/academic/article'" class="btn btn-primary">Read More</router-link>
+                                </b-col>
                                 </b-row>
-                                <b-row class="mb-3">
-                                    <b-col sm="4" class="mb-3">
-                                        <b-img fluid src="https://iqyoe.github.io/puma-web/assets/img/carousel-content-2.png" alt="cademic news" style="height:10em;" />
-                                    </b-col>
-                                    <b-col sm="8">
-                                        <h3>News 2</h3>
-                                        <p>Lorem ipsum dolor sit amet, at quem dicant ceteros per, et per tota phaedrum, modo explicari mei cu. At eam iudicabit efficiantur comprehensam. Paulo laudem ne nec, cum eu nibh consul ullamcorper. Alii quando iriure at eam, probo offendit cu mei, tritani voluptua ex vis. Eam cu nisl option equidem.</p>
-                                        <a href="" class="btn btn-primary">Read More</a>
-                                    </b-col>
-                                </b-row>
-                            </div>
                         </b-card>
                     </b-col>
-                  </b-row>
+                    </b-row>
+                    
+                    <b-row class="mb-3">
+                    <b-col sm="12">
+                        <b-card>
+                                <b-row class="mt-3">
+                                <b-col sm="4" class="mb-3">
+                                    <b-img fluid src="https://iqyoe.github.io/puma-web/assets/img/carousel-content-2.png" alt="cademic news" style="height:10em;" />
+                                </b-col>
+                                <b-col sm="8" class="mb-3">
+                                    <h3>News 2</h3>
+                                    <p>Lorem ipsum dolor sit amet, at quem dicant ceteros per, et per tota phaedrum, modo explicari mei cu. At eam iudicabit efficiantur comprehensam. Paulo laudem ne nec, cum eu nibh consul ullamcorper. Alii quando iriure at eam, probo offendit cu mei, tritani voluptua ex vis. Eam cu nisl option equidem.</p>
+                                    <router-link :to="'/academic/article'" class="btn btn-primary">Read More</router-link>
+                                </b-col>
+                                </b-row>
+                        </b-card>
+                    </b-col>
+                    </b-row>
+
               </b-col>
 
               <b-col sm="12" class="mb-3">

@@ -14,10 +14,10 @@
                 <h4>Email</h4>
                   <p>puma.computing@president.ac.id</p>
                   <h4>Social Media</h4>
-                  <a href="https://www.youtube.com/channel/UCTuJBY7PYu_6-Tin6SEAFhA" class="sm"><font-awesome-icon :icon="['fab', 'youtube']" size="lg" /></a>
-                  <a href="https://facebook.com/pumacomputing/" class="sm"><font-awesome-icon :icon="['fab', 'facebook']" size="lg" /></a>
-                  <a href="https://instagram.com/pucomputing/" class="sm"><font-awesome-icon :icon="['fab', 'instagram']" size="lg" /></a>
-                  <a href="http://line.me/ti/p/~pucomputing" class="sm"><font-awesome-icon :icon="['fab', 'line']" size="lg" /></a>
+                  <a href="https://www.youtube.com/channel/UCTuJBY7PYu_6-Tin6SEAFhA" class="sm" target="_blank"><font-awesome-icon :icon="['fab', 'youtube']" size="lg" /></a>
+                  <a href="https://facebook.com/pumacomputing/" class="sm" target="_blank"><font-awesome-icon :icon="['fab', 'facebook']" size="lg" /></a>
+                  <a href="https://instagram.com/pucomputing/" class="sm" target="_blank"><font-awesome-icon :icon="['fab', 'instagram']" size="lg" /></a>
+                  <a href="http://line.me/ti/p/~pucomputing" class="sm" target="_blank"><font-awesome-icon :icon="['fab', 'line']" size="lg" /></a>
                   <!-- <a href="" class="sm"><font-awesome-icon :icon="['fab', 'ask']" size="lg" /></a> -->
               </b-col>
 

@@ -1,29 +1,30 @@
 <template>
-  <div>
-      <b-container>
-          <b-breadcrumb :items="breads"/>
-      </b-container>
-      <b-container>
-        <h1 class="display-3" style="padding:0 1.5em">{{title}}</h1>
+  <div id="article">
+    <b-container class="mt-3">
+      <b-breadcrumb :items="breads"/>
+
+        <h1 class="display-3">{{title}}</h1>
+
         <b-row align-h="end">
-            <b-col>&nbsp;</b-col>
             <b-col cols="3" class="mb-3">
                 <b-card>
-                    <a href="http://" class="icon"><font-awesome-icon :icon="['fab','facebook']"></font-awesome-icon></a>
-                    <a href="http://" class="icon"><font-awesome-icon :icon="['fab','twitter-square']"></font-awesome-icon></a>
-                    <a href="http://" class="icon"><font-awesome-icon :icon="['fab','linkedin']"></font-awesome-icon></a>
-                    <a href="http://" class="icon"><font-awesome-icon :icon="['fab','google-plus-square']"></font-awesome-icon></a>
+                    <a href="http://" class="icon"><font-awesome-icon :icon="['fab','facebook']" /></a>
+                    <a href="http://" class="icon"><font-awesome-icon :icon="['fab','twitter-square']" /></a>
+                    <a href="http://" class="icon"><font-awesome-icon :icon="['fab','linkedin']" /></a>
+                    <a href="http://" class="icon"><font-awesome-icon :icon="['fab','google-plus-square']" /></a>
                 </b-card>
             </b-col>
         </b-row>
-        <img :src="image" alt="Article Image" srcset="" class="mb-5">
+        
+        <b-img fluid :src="image" alt="Article Image" srcset="" class="mb-5" />
         <p v-for="article of articles" :key="article.index" class="lead">{{article.paragraph}}</p>
-      </b-container>
+    </b-container>
   </div>
 </template>
 
 <script>
 export default {
+  name: 'Article',
   data () {
     return {
       breads:

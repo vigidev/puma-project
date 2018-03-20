@@ -35,8 +35,7 @@
         <b-row class="mb-3">
           <b-col sm="12">
             <b-card>
-                <div class="card-body">
-                    <b-row class="mb-3">
+                    <b-row class="mt-3">
                       <b-col sm="4" class="mb-3">
                           <b-img fluid src="https://iqyoe.github.io/puma-web/assets/img/carousel-content-2.png" alt="cademic news" style="height:10em;" />
                       </b-col>
@@ -46,7 +45,6 @@
                           <router-link :to="'/academic/article'" class="btn btn-primary">Read More</router-link>
                       </b-col>
                     </b-row>
-                </div>
             </b-card>
           </b-col>
         </b-row>
@@ -54,8 +52,7 @@
         <b-row class="mb-3">
           <b-col sm="12">
             <b-card>
-                <div class="card-body">
-                    <b-row class="mb-3">
+                    <b-row class="mt-3">
                       <b-col sm="4" class="mb-3">
                           <b-img fluid src="https://iqyoe.github.io/puma-web/assets/img/carousel-content-2.png" alt="cademic news" style="height:10em;" />
                       </b-col>
@@ -65,10 +62,10 @@
                           <router-link :to="'/academic/article'" class="btn btn-primary">Read More</router-link>
                       </b-col>
                     </b-row>
-                </div>
             </b-card>
           </b-col>
         </b-row>
+        
   </b-container>
 </div>
 </template>
