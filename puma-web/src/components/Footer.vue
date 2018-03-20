@@ -2,7 +2,7 @@
   <div id="footer">
       <b-container>
           <b-row>
-              <b-col cols="4">
+              <b-col md="4">
                   <b-img fluid src="https://iqyoe.github.io/puma-web/assets/img/horizontal-logo-comp-lengkap-white.png" alt="Logo Computing" />
                   <h4>Address</h4>
                   <p>President University Campus <br> Jl. Ki Hajar Dewantara, Kota Jababeka, <br> Cikarang Baru, Bekasi 17550 - Indonesia</p>

@@ -8,7 +8,7 @@
           </b-row>
 
           <b-row class="mb-3">
-              <b-col cols="4">
+              <b-col sm="12" md="4">
                 <h4>Address</h4>
                   <p>President University Campus <br> Jl. Ki Hajar Dewantara, Kota Jababeka, <br> Cikarang Baru, Bekasi 17550 - Indonesia</p>
                 <h4>Email</h4>
@@ -21,7 +21,7 @@
                   <!-- <a href="" class="sm"><font-awesome-icon :icon="['fab', 'ask']" size="lg" /></a> -->
               </b-col>
 
-              <b-col cols="8">
+              <b-col sm="12" md="8">
                   <h4>Maps</h4>
                    <gmap-map
                         :center="center"
@@ -44,7 +44,8 @@
               <h2>Tell Us</h2>
           </b-row>
           
-              <b-row class="mb-3" align-h="center">
+          <b-row align-h="center">
+            <b-col class="mb-3">
                 <b-form @reset="onReset">
                     <b-form-group>
                         <b-form-row inline>
@@ -106,7 +107,8 @@
                     <b-button type="submit" variant="primary">Submit</b-button>
                     <b-button type="reset" variant="danger">Reset</b-button>
                 </b-form>
-            </b-row>
+            </b-col>
+          </b-row>
     </b-container>
   </div>
 </template>
