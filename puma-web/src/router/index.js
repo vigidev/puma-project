@@ -6,6 +6,7 @@ import Acad from '@/components/Academic'
 import About from '@/components/About'
 import Contact from '@/components/Contact'
 import Computizen from '@/components/Computizen'
+import Article from '@/components/ArticleEx'
 
 Vue.use(Router)
 
@@ -40,6 +41,11 @@ export default new Router({
       path: '/computizen',
       name: 'Computizen',
       component: Computizen
+    },
+    {
+      path: '/academic/article',
+      name: 'Article Example',
+      component: Article
     }
   ],
   mode: 'history', // https://router.vuejs.org/en/essentials/history-mode.html
