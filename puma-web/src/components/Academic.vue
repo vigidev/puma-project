@@ -43,15 +43,7 @@
                       <b-col sm="8" class="mb-3">
                           <h3>Acad News 1</h3>
                           <p>Lorem ipsum dolor sit amet, at quem dicant ceteros per, et per tota phaedrum, modo explicari mei cu. At eam iudicabit efficiantur comprehensam. Paulo laudem ne nec, cum eu nibh consul ullamcorper. Alii quando iriure at eam, probo offendit cu mei, tritani voluptua ex vis. Eam cu nisl option equidem.</p>
-                      </b-col>
-                    </b-row>
-                    <b-row>
-                      <b-col sm="4" class="mb-3">
-                          <b-img fluid src="https://iqyoe.github.io/puma-web/assets/img/carousel-content-2.png" alt="cademic news" style="height:10em;" />
-                      </b-col>
-                      <b-col sm="8" class="mb-3">
-                          <h3>Acad News 2</h3>
-                          <p>Lorem ipsum dolor sit amet, at quem dicant ceteros per, et per tota phaedrum, modo explicari mei cu. At eam iudicabit efficiantur comprehensam. Paulo laudem ne nec, cum eu nibh consul ullamcorper. Alii quando iriure at eam, probo offendit cu mei, tritani voluptua ex vis. Eam cu nisl option equidem.</p>
+                          <a href="" class="btn btn-primary">Read More</a>
                       </b-col>
                     </b-row>
                 </div>
@@ -59,6 +51,24 @@
           </b-col>
         </b-row>
           
+        <b-row class="mb-3">
+          <b-col sm="12">
+            <b-card>
+                <div class="card-body">
+                    <b-row class="mb-3">
+                      <b-col sm="4" class="mb-3">
+                          <b-img fluid src="https://iqyoe.github.io/puma-web/assets/img/carousel-content-2.png" alt="cademic news" style="height:10em;" />
+                      </b-col>
+                      <b-col sm="8" class="mb-3">
+                          <h3>Acad News 2</h3>
+                          <p>Lorem ipsum dolor sit amet, at quem dicant ceteros per, et per tota phaedrum, modo explicari mei cu. At eam iudicabit efficiantur comprehensam. Paulo laudem ne nec, cum eu nibh consul ullamcorper. Alii quando iriure at eam, probo offendit cu mei, tritani voluptua ex vis. Eam cu nisl option equidem.</p>
+                          <a href="" class="btn btn-primary">Read More</a>
+                      </b-col>
+                    </b-row>
+                </div>
+            </b-card>
+          </b-col>
+        </b-row>
   </b-container>
 </div>
 </template>

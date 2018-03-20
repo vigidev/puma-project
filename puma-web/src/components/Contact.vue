@@ -14,6 +14,11 @@
                   <h4>Email</h4>
                   <p>puma.computing@president.ac.id</p>
                   <h4>Social Media</h4>
+                  <a href="" class="sm"><font-awesome-icon :icon="['fab', 'youtube']"></font-awesome-icon></a>
+                  <a href="" class="sm"><font-awesome-icon :icon="['fab', 'facebook']"></font-awesome-icon></a>
+                  <a href="" class="sm"><font-awesome-icon :icon="['fab', 'instagram']"></font-awesome-icon></a>
+                  <a href="" class="sm"><font-awesome-icon :icon="['fab', 'line']"></font-awesome-icon></a>
+                  <a href="" class="sm"><font-awesome-icon :icon="['fab', 'ask']"></font-awesome-icon></a>
               </b-col>
               <b-col cols="8">
                   <h4>Maps</h4>
@@ -152,5 +157,13 @@ export default {
         font-weight: bold;
         border-bottom: solid 5px;
         text-transform: uppercase;
+    }
+    .sm{
+        font-size: 2em;
+        margin: 0 .5em; 
+        color: rgba(0, 0, 0, 0.5);
+    }
+    .sm:hover{
+        color: rgba(0, 0, 0, 0.7);
     }
 </style>

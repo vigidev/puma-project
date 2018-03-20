@@ -35,7 +35,7 @@
     <b-navbar type="light" variant="light" sticky>
         <b-container>
           <b-row>
-            <img src="https://iqyoe.github.io/puma-web/assets/img/horizontal-logo-comp-lengkap-hitam.png" alt="Header" style="height:10vw;z-index:999;">
+            <img src="https://iqyoe.github.io/puma-web/assets/img/horizontal-logo-comp-lengkap-hitam.png" alt="Header" style="height:10vh;z-index:999;">
           </b-row>
         </b-container>
     </b-navbar>

@@ -27,12 +27,12 @@
         </b-container>
       </div>
       <vue-particles
-        color="#dedede"
+        color="#fff"
         :particleOpacity="0.7"
         :particlesNumber="80"
         shapeType="circle"
         :particleSize="4"
-        linesColor="#dedede"
+        linesColor="#fff"
         :linesWidth="1"
         :lineLinked="true"
         :lineOpacity="0.4"
@@ -102,7 +102,7 @@
           <h2>Events</h2>
         </b-row>
 
-          <b-row class="mt-3">
+          <b-row class="mt-3" align-h="center">
             <b-col sm="12" md="4">
               <b-card overlay
                       img-src="https://iqyoe.github.io/puma-web/assets/img/news2.jpg"
@@ -170,8 +170,8 @@
             </b-card>
           </b-col>
         </b-row>
-      </b-container> -->
-    </div>
+      </b-container>
+    </div> -->
     </div>
 </template>
 

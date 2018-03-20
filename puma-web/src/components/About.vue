@@ -50,40 +50,41 @@
               <b-tab title="Board of Director" active>
                 <b-row>
                   <b-col v-show="responsive" md="6">
-                    <b-img fluid src="https://iqyoe.github.io/puma-web/assets/img/carousel-content-1.png" alt="BOD" />
+                    <b-img fluid src="../../static/bod.jpg" alt="BOD" />
                   </b-col>
                   <b-col>
-                    Board of Director Description
+                    <h4>Board of Director</h4>
+                    <p></p>
                   </b-col>
                 </b-row>
               </b-tab>
               <b-tab title="Student Activity">
                 <b-row>
                   <b-col v-show="responsive" md="6">
-                    <b-img fluid src="https://iqyoe.github.io/puma-web/assets/img/carousel-content-1.png" alt="SA" />
+                    <b-img fluid src="../../static/sa.jpg" alt="SA" />
                   </b-col>
                   <b-col>
-                    Student Activity Division Description
+                    <h4>Student Activity Division</h4>
                   </b-col>
                 </b-row>
               </b-tab>
               <b-tab title="Student Development">
                 <b-row>
                   <b-col v-show="responsive" md="6">
-                    <b-img fluid src="https://iqyoe.github.io/puma-web/assets/img/carousel-content-1.png" alt="SD" />
+                    <b-img fluid src="../../static/sd.jpg" alt="SD" />
                   </b-col>
                   <b-col>
-                    Student Development Division Description
+                    <h4>Student Development Division</h4>
                   </b-col>
                 </b-row>
               </b-tab>
               <b-tab title="Communication">
                 <b-row>
                   <b-col v-show="responsive" md="6">
-                    <b-img fluid src="https://iqyoe.github.io/puma-web/assets/img/carousel-content-1.png" alt="COMM"/>
+                    <b-img fluid src="../../static/com.jpg" alt="COMM"/>
                   </b-col>
                   <b-col>
-                    Communication Description
+                    <h4>Communication</h4>
                   </b-col>
                 </b-row>
               </b-tab>
@@ -106,8 +107,8 @@
                       footer-tag="footer"
               >
               <em slot="footer">
-                <a :href="'https://linkedin.com/'.in" target="_blank"><font-awesome-icon :icon="['fab', 'linkedin']" /></a> &nbsp 
-                <a href="" target="_blank"><font-awesome-icon :icon="['fab', 'github']" /></a>
+                <a style="font-size:1.5em;" :href="'https://linkedin.com/'.in" target="_blank"><font-awesome-icon :icon="['fab', 'linkedin']" /></a> <span>&nbsp;</span> 
+                <a style="font-size:1.5em;" :href="'https://github.com/'.git" target="_blank"><font-awesome-icon :icon="['fab', 'github']" /></a>
               </em>
               </b-card>
             </b-col>
@@ -149,22 +150,22 @@
         devs: [{
           name: 'Rakha Viantoni Prastya',
           in: 'rakhaviantoni',
-          git: ''
+          git: 'rakhaviantoni'
         },
         {
-          name: 'Muhammad Iqbal Lukman',
-          in: '',
-          git: ''
+          name: 'Muhammad Iqbal',
+          in: 'iqballukman',
+          git: 'iqyoe'
         },
         {
           name: 'Teuku Hilman Revanda',
-          in: '',
-          git: ''
+          in: 'thilmanr',
+          git: 'teukuatjeh'
         },
         {
           name: 'Handy Lim',
-          in: '',
-          git: ''
+          in: 'handylim',
+          git: 'handylim'
         }]
       }
     },
