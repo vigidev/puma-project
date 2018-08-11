@@ -12,7 +12,7 @@
                 <h4>Address</h4>
                   <p>President University Campus <br> Jl. Ki Hajar Dewantara, Kota Jababeka, <br> Cikarang Baru, Bekasi 17550 - Indonesia</p>
                 <h4>Email</h4>
-                  <p>puma.computing@president.ac.id</p>
+                  <p><a href="mailto:puma.computing@president.ac.id">puma.computing@president.ac.id</a></p>
                   <h4>Social Media</h4>
                   <a href="https://www.youtube.com/channel/UCTuJBY7PYu_6-Tin6SEAFhA" class="sm" target="_blank"><font-awesome-icon :icon="['fab', 'youtube']" size="lg" /></a>
                   <a href="https://facebook.com/pumacomputing/" class="sm" target="_blank"><font-awesome-icon :icon="['fab', 'facebook']" size="lg" /></a>
@@ -153,14 +153,13 @@ export default {
 </script>
 
 <style scoped>
-    h2 {
-        margin: 1.5em auto;
-        font-size: 2.5em;
-        padding-bottom: .2em;
-        font-weight: bold;
-        border-bottom: solid 5px;
-        text-transform: uppercase;
-    }
+  h2 {
+    background-color: #ced4da;
+    padding: 0.5em;
+    margin: 1em auto;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
     .sm{
         font-size: 2em;
         margin: 0 .5em; 

@@ -19,7 +19,7 @@
             <li class="nav-item"><router-link :to="'/event'" class="nav-link">Event</router-link></li>
             <li class="nav-item"><router-link :to="'/academic'" class="nav-link">Academic</router-link></li>
             <li class="nav-item"><router-link :to="'/about'" class="nav-link">About</router-link></li>
-            <li class="nav-item" v-b-modal.comLogin><router-link :to="'/computizen'" class="nav-link">Computizen</router-link></li>
+            <!-- <li class="nav-item" v-b-modal.comLogin><router-link :to="'/computizen'" class="nav-link">Computizen</router-link></li> -->
             <li class="nav-item"><router-link :to="'/contact'" class="nav-link">Contact</router-link></li>
         </b-navbar-nav>
         </b-row>
@@ -75,5 +75,8 @@ export default {
 .navbar-dark{
     background: #000411 !important;
     box-shadow: 0 1px 1px #ccc;
+}
+a {
+  text-decoration: none;
 }
 </style>

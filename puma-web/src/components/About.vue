@@ -8,21 +8,21 @@
       </b-row>
       
       <b-row class="mb-3">
-        <b-col sm="12" md="6">
-          <h3>Computer Science? Computing?</h3>
-          <p>Computer Science is the theoretical study and practical application of computation, including such topics as: design and maintenance of software systems, distributed systems, human-computer interaction, computational modeling, artificial intelligence, mobile computing, programming languages, image processing, and computer graphics. The use of information technology in almost every corner of human activity continue to create opportunities for our graduates.</p>
-          <p>Computing (Computer Science Faculty in President University) consist of 3 major: Information Technology, Information System, and Visual Communicaton Design. These three faculty hold activities and events that helped by the student organization called PUMA (President University Major Association) that represent each major or faculty.</p>
+        <b-col sm="12" md="6" v-if="about1">
+          <h3>{{ about1.title }}</h3>
+          <span v-html="about1.content"></span>
         </b-col>
-        <b-col sm="12" md="6">
-          <h3>PUMA Computing?</h3>
-          <p>PUMA Computing is a student organization under Faculty of Computing. It main responsibility is to hold activities and events that have impact to student in both academic and non-academic. Puma Computing's events and activities are focused especially for IT and IS students. There are annual events that held by PUMA Computing such as CSGO, Computing Social Project, Comsphere, etc.</p>
-          <p>From 2016-2017, PUMA Computing has cabinet called Evolvere. This cabinet is lead by Muhammad Iqbal Lukman as Chairperson and Annasya Christia as Vice Chairperson. The cabinet is divided to 4 division, which are Board of Director, Student Development, Student Activities, and Communication. There are 31 person in Evolvere Cabinet.</p>
+        <b-col sm="12" md="6" v-if="about2">
+          <h3>{{ about2.title }}</h3>
+          <span v-html="about2.content"></span>
         </b-col>
       </b-row>
       <!-- End of Intro -->
       <b-row class="mb-3">
         <b-col>
-          <h3>Computing Dean and Head Study Programme</h3>
+          <b-row>
+            <h2>Computing Dean and Head Study Programme</h2>
+          </b-row>
           <b-row align-h="center">
             <b-col sm="12" md="4" v-for="dnh of deannhead" :key="dnh.name">
               <!-- <b-card-group deck class="mb-3"> -->
@@ -32,7 +32,7 @@
                         img-top
                         class="mb-3"
                         align="center">
-                    <p class="card-text">
+                    <p class="card-text" style="text-align:center;">
                     {{dnh.name}}
                     </p>
                 </b-card>
@@ -44,7 +44,9 @@
       <!-- End of Dean and HOSP -->
       <b-row class="mb-3">
         <b-col>
-          <h3>PUMA Computing Team</h3>
+          <b-row>
+            <h2>PUMA Computing Team</h2>
+          </b-row>
           <b-card no-body>
             <b-tabs pills card vertical>
               <b-tab title="Board of Director" active>
@@ -95,7 +97,9 @@
       <!-- End of PUMA Computing Team -->
       <b-row class="mb-3">
         <b-col>
-          <h3>PUMA Computing Web Development Team</h3>
+          <b-row>
+            <h2>PUMA Computing Web Development Team</h2>
+          </b-row>
           <b-row>
             <b-col sm="12" md="3" v-for="dev of devs" :key="dev.name">
               <b-card img-src="http://via.placeholder.com/200x200"
@@ -107,7 +111,7 @@
                       footer-tag="footer"
               >
               <em slot="footer">
-                <a :href="'https://linkedin.com/in/' + dev.in" class="in" target="_blank"><font-awesome-icon :icon="['fab', 'linkedin']" /></a> &nbsp 
+                <a :href="'https://linkedin.com/in/' + dev.in" class="in" target="_blank"><font-awesome-icon :icon="['fab', 'linkedin']" /></a> &nbsp; 
                 <a :href="'https://github.com/' + dev.git" class="git" target="_blank"><font-awesome-icon :icon="['fab', 'github']" /></a>
               </em>
               </b-card>
@@ -124,6 +128,16 @@
   export default {
     data () {
       return {
+        about1: {
+          uid: '',
+          title: '',
+          content: ''
+        },
+        about2: {
+          uid: '',
+          title: '',
+          content: ''
+        },
         responsive: true,
         items: [{
           text: 'Home',
@@ -170,7 +184,47 @@
       }
     },
     name: 'About',
+    created () {
+      this.fetchAbout1()
+      this.fetchAbout2()
+    },
     methods: {
+      fetchAbout1 () {
+        const url = 'https://api.pucomputing.org/api/about/1'
+        fetch(url
+        // {
+        //   headers: new Headers({
+        //     'Authorization': 'Bearer' +
+        //       'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL3B1bWEtYmFja2VuZFwvcHVibGljXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTMwNzY2NDYzLCJleHAiOjE1MzA3NzAwNjMsIm5iZiI6MTUzMDc2NjQ2MywianRpIjoiWHlSU2p3SUx0WFo5SHNoSCIsInN1YiI6MSwicHJ2IjoiODdlMGFmMWVmOWZkMTU4MTJmZGVjOTcxNTNhMTRlMGIwNDc1NDZhYSJ9.x14hrlPcG7O9KWkM1c0N46us9ZJBbicUBpKZyZVqoCU'
+        //   })
+        // }
+        ).then(res => res.json())
+        .then(res => {
+          console.log(res.data)
+          this.about1.uid = res.data.uid
+          this.about1.title = res.data.title
+          this.about1.content = res.data.content
+        })
+        .catch(err => console.log(err))
+      },
+      fetchAbout2 () {
+        const url = 'https://api.pucomputing.org/api/about/2'
+        fetch(url
+        // {
+        //   headers: new Headers({
+        //     'Authorization': 'Bearer' +
+        //       'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL3B1bWEtYmFja2VuZFwvcHVibGljXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTMwNzY2NDYzLCJleHAiOjE1MzA3NzAwNjMsIm5iZiI6MTUzMDc2NjQ2MywianRpIjoiWHlSU2p3SUx0WFo5SHNoSCIsInN1YiI6MSwicHJ2IjoiODdlMGFmMWVmOWZkMTU4MTJmZGVjOTcxNTNhMTRlMGIwNDc1NDZhYSJ9.x14hrlPcG7O9KWkM1c0N46us9ZJBbicUBpKZyZVqoCU'
+        //   })
+        // }
+        ).then(res => res.json())
+        .then(res => {
+          console.log(res.data)
+          this.about2.uid = res.data.uid
+          this.about2.title = res.data.title
+          this.about2.content = res.data.content
+        })
+        .catch(err => console.log(err))
+      },
       picShow () {
         if (window.innerWidth > 720) {
           this.responsive = true
@@ -183,14 +237,13 @@
 </script>
 
 <style scoped>
-    h2 {
-        margin: 1.5em auto;
-        font-size: 2.5em;
-        padding-bottom: .2em;
-        font-weight: bold;
-        border-bottom: solid 5px;
-        text-transform: uppercase;
-    }
+  h2 {
+    background-color: #ced4da;
+    padding: 0.5em;
+    margin: 1em auto;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
     a.in {
       color: rgba(0, 0, 0, 1);
     }

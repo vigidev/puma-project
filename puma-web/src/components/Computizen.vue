@@ -205,13 +205,11 @@ export default {
 </script>
 
 <style scoped>
-    h2 {
-        margin: auto;
-        margin-bottom: 1em;
-        font-size: 2.5em;
-        padding-bottom: .2em;
-        font-weight: bold;
-        border-bottom: solid 5px #000;
-        text-transform: uppercase;
-    }
+  h2 {
+    background-color: #7f8c8d;
+    padding: 0.5em;
+    margin: 1em auto;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
 </style>

@@ -9,7 +9,7 @@
               </b-col>
               <b-col>
                   <h4>Contact Us</h4>
-                  <p style="margin-bottom:0;"><b>Email:</b> puma.computing@president.ac.id</p>
+                  <p style="margin-bottom:0;"><b>Email:</b> <a href="mailto:puma.computing@president.ac.id">puma.computing@president.ac.id</a></p>
                   <h4>Maps</h4>
                    <gmap-map
                         :center="center"
@@ -26,7 +26,7 @@
                         ></gmap-marker>
                     </gmap-map>
               </b-col>
-              <b-col cols="2">
+              <!-- <b-col cols="2">
                   <h4>Information</h4>
                   <ul>
                     <li class="inf"><router-link :to="'/'" class="" exact>Home</router-link></li>
@@ -36,7 +36,7 @@
                     <li class="inf"><router-link :to="'/about'" class="">Computizen</router-link></li>
                     <li class="inf"><router-link :to="'/about'" class="">Contact Us</router-link></li>
                   </ul>
-              </b-col>
+              </b-col> -->
           </b-row>
       </b-container>
   </div>
@@ -64,6 +64,7 @@ export default {
     h4 {
         font-weight: bold;
         margin-top: 1em;
+        color: #fff;
     }
     ul{
         padding: 0;

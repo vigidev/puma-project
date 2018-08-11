@@ -12,6 +12,7 @@ import VueScrollTo from 'vue-scrollto'
 import FontAwesomeIcon from '@fortawesome/vue-fontawesome'
 import fontawesome from '@fortawesome/fontawesome'
 import brands from '@fortawesome/fontawesome-free-brands'
+import './assets/style.css'
 
 Vue.use(FontAwesomeIcon)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
