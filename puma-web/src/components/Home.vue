@@ -109,8 +109,8 @@
       <b-container>
         <b-row class="mt-3" align-h="center" v-if="events.length>0">
           <b-col sm="12" md="4" v-for="event of events" :key="event.uid">
-            <router-link :to="'/academic/article'">
-              <b-card overlay img-src="https://iqyoe.github.io/puma-web/assets/img/news2.jpg" img-alt="Image"></b-card>
+            <router-link :to="'event.url'">
+              <b-card overlay :img-src="event.poster" img-alt="Image"></b-card>
             </router-link>
           </b-col>
         </b-row>
