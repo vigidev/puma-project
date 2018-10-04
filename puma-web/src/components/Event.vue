@@ -11,18 +11,18 @@
           <b-col v-for="event of events" 
                  :key="event.uid"
                  sm="12" md="4">
-            <router-link :to="'/academic/article'">
+            <a :href="event.url">
             <b-card :img-src="event.poster"
                     :img-alt="event.title"
                     :title="event.title"
-                    img-bottom
+                    img-top
             >
             <p class="card-text">
               {{event.content}}
             </p>
             <!-- <a href="" class="btn btn-primary">Read More</a> -->
             </b-card>
-            </router-link>
+            </a>
           </b-col>
         </b-row>
         
@@ -54,7 +54,7 @@
           <b-col v-for="activity of activities" 
                  :key="activity.uid"
                  sm="12" md="4">
-            <router-link :to="'/academic/article'">
+            <a :to="activity.url">
             <b-card :img-src="activity.poster"
                     :img-alt="activity.title"
                     :title="activity.title"
@@ -65,7 +65,7 @@
             </p>
             <!-- <a href="" class="btn btn-primary">Read More</a> -->
             </b-card>
-            </router-link>
+            </a>
           </b-col>
         </b-row>
 

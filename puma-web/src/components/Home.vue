@@ -73,7 +73,7 @@
       <b-container>
         <b-row class="mt-4" v-if="news.length>0">
           <b-col v-for="pernews of news" :key="pernews.uid">
-            <router-link :href="event.url">
+            <a :href="event.url">
             <b-card :img-src="event.poster" :img-alt="event.poster" img-bottom tag="article">
               <h3>{{pernews.title}}</h3>
               <p class="card-text">
@@ -81,7 +81,7 @@
               </p>
               <!-- <b-button href="#" variant="primary">Read More</b-button> -->
             </b-card>
-            </router-link>
+            </a>
           </b-col>
         </b-row>
         <b-row class="mt-4" v-else>
@@ -109,9 +109,9 @@
       <b-container>
         <b-row class="mt-3" align-h="center" v-if="events.length>0">
           <b-col sm="12" md="4" v-for="event of events" :key="event.uid">
-            <router-link :href="event.url">
+            <a :href="event.url">
               <b-card overlay :img-src="event.poster" img-alt="Image"></b-card>
-            </router-link>
+            </a>
           </b-col>
         </b-row>
         <b-row class="mt-3" align-h="center" v-else>
